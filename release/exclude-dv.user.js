@@ -5,12 +5,14 @@
 // @supportURL  https://github.com/mogeko/userscripts/issues
 // @match       https://rarbg.to/torrents*
 // @match       https://rarbg.to/top10
+// @match       https://rarbgmirror.com/torrents*
+// @match       https://rarbgmirror.com/top10
 // @icon        https://besticon.herokuapp.com/icon?size=80..120..200&url=rarbg.to
 // @downloadURL https://cdn.jsdelivr.net/gh/mogeko/userscripts@master/release/exclude-dv.user.js
 // @updateURL   https://cdn.jsdelivr.net/gh/mogeko/userscripts@master/release/exclude-dv.user.js
 // @author      Mogeko
 // @license     MIT
-// @version     0.0.1
+// @version     0.0.2
 // @grant       none
 // ==/UserScript==
 (function () {
@@ -21,7 +23,10 @@
       var ref;
       var link = tr.querySelector("td:nth-child(2) > a");
       var cover = tr.querySelector("td:nth-child(1) img");
-      if ((link === null || link === void 0 ? void 0 : (ref = link.title) === null || ref === void 0 ? void 0 : ref.includes(".DV.")) && (cover === null || cover === void 0 ? void 0 : cover.src) === HDR) tr.remove();
+      if ((link === null || link === void 0 ? void 0 : (ref = link.title) === null || ref === void 0 ? void 0 : ref.includes(".DV.")) && (cover === null || cover === void 0 ? void 0 : cover.src) === HDR) {
+          console.log("[Exclude DV] Remove: ", link === null || link === void 0 ? void 0 : link.title);
+          tr.remove();
+      }
   });
 
 })();

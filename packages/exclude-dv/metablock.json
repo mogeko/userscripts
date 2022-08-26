@@ -2,7 +2,12 @@
   "name": "Exclude DV",
   "namespace": "https://github.com/mogeko/userscripts",
   "supportURL": "https://github.com/mogeko/userscripts/issues",
-  "match": ["https://rarbg.to/torrents*", "https://rarbg.to/top10"],
+  "match": [
+    "https://rarbg.to/torrents*",
+    "https://rarbg.to/top10",
+    "https://rarbgmirror.com/torrents*",
+    "https://rarbgmirror.com/top10"
+  ],
   "icon": "https://besticon.herokuapp.com/icon?size=80..120..200&url=rarbg.to",
   "downloadURL": "https://cdn.jsdelivr.net/gh/mogeko/userscripts@master/release/exclude-dv.user.js",
   "updateURL": "https://cdn.jsdelivr.net/gh/mogeko/userscripts@master/release/exclude-dv.user.js",

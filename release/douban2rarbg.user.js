@@ -5,8 +5,8 @@
 // @supportURL  https://github.com/mogeko/userscripts/issues
 // @match       https://movie.douban.com/subject/*
 // @icon        https://besticon.herokuapp.com/icon?size=80..120..200&url=douban.com
-// @downloadURL https://cdn.jsdelivr.net/gh/mogeko/userscripts@master/dist/douban2rarbg.user.js
-// @updateURL   https://cdn.jsdelivr.net/gh/mogeko/userscripts@master/dist/douban2rarbg.user.js
+// @downloadURL https://cdn.jsdelivr.net/gh/mogeko/userscripts@master/release/douban2rarbg.user.js
+// @updateURL   https://cdn.jsdelivr.net/gh/mogeko/userscripts@master/release/douban2rarbg.user.js
 // @author      Mogeko
 // @license     MIT
 // @version     0.6.2

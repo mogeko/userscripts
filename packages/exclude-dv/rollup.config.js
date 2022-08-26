@@ -7,7 +7,7 @@ const pkg = require("./package.json");
 export default {
   input: path.resolve(__dirname, "src/main.ts"),
   output: {
-    file: path.resolve("../..", `dist/${pkg.name}.user.js`),
+    file: path.resolve("../..", `release/${pkg.name}.user.js`),
     format: "iife",
   },
   plugins: [

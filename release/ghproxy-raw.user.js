@@ -7,6 +7,7 @@
 // @icon        https://besticon.herokuapp.com/icon?size=80..120..200&url=github.com
 // @downloadURL https://cdn.jsdelivr.net/gh/mogeko/userscripts@master/release/ghproxy-raw.user.js
 // @updateURL   https://cdn.jsdelivr.net/gh/mogeko/userscripts@master/release/ghproxy-raw.user.js
+// @run-at      document-end
 // @author      Mogeko
 // @license     MIT
 // @version     0.1.3
@@ -16,10 +17,10 @@
   'use strict';
 
   var PROXY_URL = "https://ghproxy.com/";
-  var agentRaw = function(proxy) {
+  function agentRaw(proxy) {
       var rawButton = document.querySelector("#raw-url");
       if (rawButton) rawButton.href = proxy + window.location.href;
-  };
+  }
   agentRaw(PROXY_URL);
   document.addEventListener("pjax:success", function() {
       agentRaw(PROXY_URL);

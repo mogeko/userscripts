@@ -1,10 +1,10 @@
 const PROXY_URL = "https://ghproxy.com/";
 
-const agentRaw = (proxy: string) => {
+function agentRaw(proxy: string) {
   const rawButton = document.querySelector<HTMLLinkElement>("#raw-url");
 
   if (rawButton) rawButton.href = proxy + window.location.href;
-};
+}
 
 agentRaw(PROXY_URL);
 

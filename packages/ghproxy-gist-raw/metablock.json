@@ -6,5 +6,6 @@
   "icon": "https://besticon.herokuapp.com/icon?size=80..120..200&url=github.com",
   "downloadURL": "https://cdn.jsdelivr.net/gh/mogeko/userscripts@master/release/ghproxy-gist-raw.user.js",
   "updateURL": "https://cdn.jsdelivr.net/gh/mogeko/userscripts@master/release/ghproxy-gist-raw.user.js",
+  "run-at": "document-end",
   "grant": "none"
 }

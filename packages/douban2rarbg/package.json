@@ -1,0 +1,18 @@
+{
+  "name": "douban2rarbg",
+  "version": "0.6.2",
+  "description": "Add direct links to RARBG & TPB from Douban.",
+  "scripts": {
+    "build": "rollup --config rollup.config.js",
+    "format": "prettier --write .",
+    "lint": "prettier --check ."
+  },
+  "keywords": [
+    "userscript",
+    "tampermonkey",
+    "douban",
+    "rarbg"
+  ],
+  "author": "Mogeko",
+  "license": "MIT"
+}

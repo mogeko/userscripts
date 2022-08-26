@@ -6,8 +6,8 @@
 // @match       https://rarbg.to/torrents*
 // @match       https://rarbg.to/top10
 // @icon        https://besticon.herokuapp.com/icon?size=80..120..200&url=rarbg.to
-// @downloadURL https://cdn.jsdelivr.net/gh/mogeko/userscripts@master/dist/exclude-dv.user.js
-// @updateURL   https://cdn.jsdelivr.net/gh/mogeko/userscripts@master/dist/exclude-dv.user.js
+// @downloadURL https://cdn.jsdelivr.net/gh/mogeko/userscripts@master/release/exclude-dv.user.js
+// @updateURL   https://cdn.jsdelivr.net/gh/mogeko/userscripts@master/release/exclude-dv.user.js
 // @author      Mogeko
 // @license     MIT
 // @version     0.0.1

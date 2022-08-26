@@ -3,7 +3,7 @@
 // @description 通过代理为 GitHub Gist 的 Raw Assets 提供加速
 // @namespace   https://mogeko.me
 // @supportURL  https://github.com/mogeko/userscripts/issues
-// @match       https://gist.github.com/*
+// @match       https://gist.github.com/**
 // @icon        https://besticon.herokuapp.com/icon?size=80..120..200&url=github.com
 // @downloadURL https://cdn.jsdelivr.net/gh/mogeko/userscripts@master/release/ghproxy-gist-raw.user.js
 // @updateURL   https://cdn.jsdelivr.net/gh/mogeko/userscripts@master/release/ghproxy-gist-raw.user.js

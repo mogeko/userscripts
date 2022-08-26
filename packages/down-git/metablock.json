@@ -1,0 +1,15 @@
+{
+  "name": "Down Git",
+  "namespace": "http://mogeko.me",
+  "supportURL": "https://github.com/mogeko/userscripts/issues",
+  "match": [
+    "https://github.com/**",
+    "https://github.com/**/tree/**",
+    "https://github.com/**/blob/**"
+  ],
+  "icon": "https://besticon.herokuapp.com/icon?size=80..120..200&url=github.com",
+  "downloadURL": "https://cdn.jsdelivr.net/gh/mogeko/userscripts@master/release/down-git.user.js",
+  "updateURL": "https://cdn.jsdelivr.net/gh/mogeko/userscripts@master/release/down-git.user.js",
+  "run-at": "document-idle",
+  "grant": "none"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "down-git",
+  "version": "0.0.3",
+  "description": "Create GitHub Resource Download Link.",
+  "scripts": {
+    "build": "rollup --config rollup.config.js",
+    "format": "prettier --write .",
+    "lint": "prettier --check ."
+  },
+  "keywords": [
+    "userscript",
+    "tampermonkey",
+    "github"
+  ],
+  "author": "Mogeko",
+  "license": "MIT"
+}

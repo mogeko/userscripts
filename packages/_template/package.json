@@ -1,7 +1,7 @@
 {
-  "name": "exclude-dv",
+  "name": "template",
   "version": "0.0.1",
-  "description": "Excluding the result of Dolby Vision in RARBG.to.",
+  "description": "There is a template to create UserScript.",
   "scripts": {
     "build": "rollup --config rollup.config.js",
     "format": "prettier --write .",
@@ -9,8 +9,7 @@
   },
   "keywords": [
     "userscript",
-    "tampermonkey",
-    "rarbg"
+    "tampermonkey"
   ],
   "author": "Mogeko",
   "license": "MIT"

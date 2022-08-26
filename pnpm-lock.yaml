@@ -5,6 +5,7 @@ importers:
   .:
     specifiers:
       '@swc/core': ^1.2.244
+      husky: ^8.0.1
       prettier: ^2.7.1
       rollup: ^2.78.1
       rollup-plugin-swc: ^0.2.1
@@ -12,6 +13,7 @@ importers:
       typescript: ^4.8.2
     devDependencies:
       '@swc/core': 1.2.244
+      husky: 8.0.1
       prettier: 2.7.1
       rollup: 2.78.1
       rollup-plugin-swc: 0.2.1_o53tlzfow27e2tsew25cpairx4
@@ -247,6 +249,12 @@ packages:
   /has-flag/4.0.0:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
+    dev: true
+
+  /husky/8.0.1:
+    resolution: {integrity: sha512-xs7/chUH/CKdOCs7Zy0Aev9e/dKOMZf3K1Az1nar3tzlv0jfqnYtu235bstsWTmXOR0EfINrPa97yy4Lz6RiKw==}
+    engines: {node: '>=14'}
+    hasBin: true
     dev: true
 
   /js-yaml/4.1.0:

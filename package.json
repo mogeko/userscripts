@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "A monorepo of UserScript I bring about.",
   "scripts": {
+    "build": "pnpm --recursive run build",
     "format": "prettier --write .",
     "lint": "prettier --check ."
   },

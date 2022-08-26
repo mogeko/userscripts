@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "A monorepo of UserScript I bring about.",
   "scripts": {
+    "prepare": "husky install",
     "build": "pnpm --recursive run build",
     "format": "prettier --write .",
     "lint": "prettier --check ."
@@ -15,6 +16,7 @@
   "license": "MIT",
   "devDependencies": {
     "@swc/core": "^1.2.244",
+    "husky": "^8.0.1",
     "prettier": "^2.7.1",
     "rollup": "^2.78.1",
     "rollup-plugin-swc": "^0.2.1",

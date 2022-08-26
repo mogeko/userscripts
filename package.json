@@ -1,6 +1,6 @@
 {
   "name": "userscripts",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "A monorepo of UserScript I bring about.",
   "scripts": {
     "prepare": "husky install",

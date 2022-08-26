@@ -1,0 +1,10 @@
+{
+  "name": "GitHub 加速 (Gist)",
+  "namespace": "https://mogeko.me",
+  "supportURL": "https://github.com/mogeko/userscripts/issues",
+  "match": "https://gist.github.com/*",
+  "icon": "https://besticon.herokuapp.com/icon?size=80..120..200&url=github.com",
+  "downloadURL": "https://cdn.jsdelivr.net/gh/mogeko/userscripts@master/release/ghproxy-gist-raw.user.js",
+  "updateURL": "https://cdn.jsdelivr.net/gh/mogeko/userscripts@master/release/ghproxy-gist-raw.user.js",
+  "grant": "none"
+}

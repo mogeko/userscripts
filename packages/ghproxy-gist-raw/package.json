@@ -1,0 +1,16 @@
+{
+  "name": "ghproxy-gist-raw",
+  "version": "0.1.2",
+  "description": "通过代理为 GitHub Gist 的 Raw Assets 提供加速",
+  "scripts": {
+    "build": "rollup --config rollup.config.js",
+    "format": "prettier --write .",
+    "lint": "prettier --check ."
+  },
+  "keywords": [
+    "userscript",
+    "tampermonkey"
+  ],
+  "author": "Mogeko",
+  "license": "MIT"
+}

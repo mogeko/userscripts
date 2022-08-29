@@ -30,7 +30,7 @@ const META_DATA = {
     const br = document.createElement("br");
 
     plNode.setAttribute("class", "pl");
-    plNode.textContent = `${key}: `;
+    plNode.appendChild(document.createTextNode(`${key}: `));
 
     const links = Object.entries(sites).map(([title, template]) => {
       const handleTemplate = (template: string) => {
@@ -42,7 +42,7 @@ const META_DATA = {
 
       link.setAttribute("href", handleTemplate(template));
       link.setAttribute("target", "_blank");
-      link.textContent = title;
+      link.appendChild(document.createTextNode(title));
 
       return link;
     });
@@ -50,8 +50,9 @@ const META_DATA = {
     attrsNode.setAttribute("class", "attrs");
     links.forEach((link, index, array) => {
       attrsNode.appendChild(link);
+
       if (index !== array.length - 1) {
-        attrsNode.innerHTML += " / ";
+        attrsNode.appendChild(document.createTextNode(" / "));
       }
     });
 

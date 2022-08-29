@@ -1,6 +1,6 @@
 {
   "name": "douban2rarbg",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "Add direct links to RARBG & TPB from Douban.",
   "scripts": {
     "build": "rollup --config rollup.config.js",

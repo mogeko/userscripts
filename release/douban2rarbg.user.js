@@ -9,7 +9,7 @@
 // @updateURL   https://cdn.jsdelivr.net/gh/mogeko/userscripts@master/release/douban2rarbg.user.js
 // @author      Mogeko
 // @license     MIT
-// @version     0.6.2
+// @version     0.6.3
 // @grant       none
 // ==/UserScript==
 (function () {
@@ -89,7 +89,7 @@
           var attrsNode = document.createElement("span");
           var br = document.createElement("br");
           plNode.setAttribute("class", "pl");
-          plNode.textContent = "".concat(key, ": ");
+          plNode.appendChild(document.createTextNode("".concat(key, ": ")));
           var links = Object.entries(sites).map(function(param) {
               var _param = _slicedToArray(param, 2), title = _param[0], template = _param[1];
               var handleTemplate = function(template) {
@@ -103,14 +103,14 @@
               var link = document.createElement("a");
               link.setAttribute("href", handleTemplate(template));
               link.setAttribute("target", "_blank");
-              link.textContent = title;
+              link.appendChild(document.createTextNode(title));
               return link;
           });
           attrsNode.setAttribute("class", "attrs");
           links.forEach(function(link, index, array) {
               attrsNode.appendChild(link);
               if (index !== array.length - 1) {
-                  attrsNode.innerHTML += " / ";
+                  attrsNode.appendChild(document.createTextNode(" / "));
               }
           });
           metaNode.appendChild(plNode);

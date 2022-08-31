@@ -39,13 +39,15 @@ function setButton(urlNode: HTMLAnchorElement) {
   return wrapNode;
 }
 
-document.querySelectorAll("div.Box-row").forEach((node) => {
-  const urlNode = node.querySelector("a");
-  const anchorNode = node.querySelector("div.text-right");
+requestIdleCallback(() => {
+  document.querySelectorAll("div.Box-row").forEach((node) => {
+    const urlNode = node.querySelector("a");
+    const anchorNode = node.querySelector("div.text-right");
 
-  if (!urlNode || urlNode.querySelector("span")) return;
+    if (!urlNode || urlNode.querySelector("span")) return;
 
-  node.insertBefore(setButton(urlNode), anchorNode);
+    node.insertBefore(setButton(urlNode), anchorNode);
+  });
 });
 
 export {};

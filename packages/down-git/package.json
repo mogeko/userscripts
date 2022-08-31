@@ -1,6 +1,6 @@
 {
   "name": "down-git",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Create GitHub Resource Download Link.",
   "scripts": {
     "build": "rollup --config rollup.config.js",

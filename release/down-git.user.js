@@ -12,7 +12,7 @@
 // @run-at      document-idle
 // @author      Mogeko
 // @license     MIT
-// @version     0.0.3
+// @version     0.0.4
 // @grant       none
 // ==/UserScript==
 (function () {
@@ -78,11 +78,13 @@
       wrapNode.appendChild(linkNode);
       return wrapNode;
   }
-  document.querySelectorAll("div.Box-row").forEach(function(node) {
-      var urlNode = node.querySelector("a");
-      var anchorNode = node.querySelector("div.text-right");
-      if (!urlNode || urlNode.querySelector("span")) return;
-      node.insertBefore(setButton(urlNode), anchorNode);
+  requestIdleCallback(function() {
+      document.querySelectorAll("div.Box-row").forEach(function(node) {
+          var urlNode = node.querySelector("a");
+          var anchorNode = node.querySelector("div.text-right");
+          if (!urlNode || urlNode.querySelector("span")) return;
+          node.insertBefore(setButton(urlNode), anchorNode);
+      });
   });
 
 })();

@@ -37,6 +37,8 @@ jobs:
         run: pnpm install
       - name: Run build
         run: pnpm build
+      - name: Gen meta file
+        run: pnpm meta --base_url=${{ steps.pages.outputs.base_url }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:

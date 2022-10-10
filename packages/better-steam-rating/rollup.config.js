@@ -1,27 +1,17 @@
-import metablock from "rollup-plugin-userscript-metablock";
-import swc from "rollup-plugin-swc";
-import path from "path";
+import rollupBuild from "../../scripts/build";
 
 const pkg = require("./package.json");
 
-export default {
-  input: path.resolve(__dirname, "src/main.js"),
-  output: {
-    file: path.resolve("../..", `release/${pkg.name}.user.js`),
-    format: "iife",
+export default rollupBuild({
+  mainFile: `${__dirname}/src/main.js`,
+  swcConfig: {
+    jsc: { target: "es5" },
   },
-  plugins: [
-    swc({
-      jsc: {
-        target: "es5",
-      },
-    }),
-    metablock({
-      override: {
-        description: pkg.description,
-        license: pkg.license,
-        version: pkg.version,
-      },
-    }),
-  ],
-};
+  metablockConfig: {
+    override: {
+      description: pkg.description,
+      license: pkg.license,
+      version: pkg.version,
+    },
+  },
+});

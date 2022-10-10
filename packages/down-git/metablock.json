@@ -8,8 +8,8 @@
     "https://github.com/**/blob/**"
   ],
   "icon": "https://besticon.herokuapp.com/icon?size=80..120..200&url=github.com",
-  "downloadURL": "https://cdn.jsdelivr.net/gh/mogeko/userscripts@master/release/down-git.user.js",
-  "updateURL": "https://cdn.jsdelivr.net/gh/mogeko/userscripts@master/release/down-git.user.js",
+  "downloadURL": "https://mogeko.github.io/userscripts/down-git.user.js",
+  "updateURL": "https://mogeko.github.io/userscripts/down-git.user.js",
   "run-at": "document-idle",
   "grant": "none"
 }

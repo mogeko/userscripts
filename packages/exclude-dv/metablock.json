@@ -9,7 +9,7 @@
     "https://rarbgmirror.com/top10"
   ],
   "icon": "https://besticon.herokuapp.com/icon?size=80..120..200&url=rarbg.to",
-  "downloadURL": "https://cdn.jsdelivr.net/gh/mogeko/userscripts@master/release/exclude-dv.user.js",
-  "updateURL": "https://cdn.jsdelivr.net/gh/mogeko/userscripts@master/release/exclude-dv.user.js",
+  "downloadURL": "https://mogeko.github.io/userscripts/exclude-dv.user.js",
+  "updateURL": "https://mogeko.github.io/userscripts/exclude-dv.user.js",
   "grant": "none"
 }

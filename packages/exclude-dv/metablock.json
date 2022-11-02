@@ -5,8 +5,10 @@
   "match": [
     "https://rarbg.to/torrents*",
     "https://rarbg.to/top10",
+    "https://rarbg.to/tv*",
     "https://rarbgmirror.com/torrents*",
-    "https://rarbgmirror.com/top10"
+    "https://rarbgmirror.com/top10",
+    "https://rarbgmirror.com/tv*"
   ],
   "icon": "https://besticon.herokuapp.com/icon?size=80..120..200&url=rarbg.to",
   "downloadURL": "https://mogeko.github.io/userscripts/exclude-dv.user.js",

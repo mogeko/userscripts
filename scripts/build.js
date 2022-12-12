@@ -5,9 +5,6 @@ import path from "path";
 /**
  * a script to build the userscript.
  *
- * @typedef {Parameters<swc>[0]} SWCConfig
- * @typedef {Parameters<metablock>[0]} MetablockConfig
- *
  * @param {{mainFile: string, outFile: string,
  *          swcConfig: SWCConfig, metablockConfig: MetablockConfig}}
  *        opt - options.
@@ -59,5 +56,10 @@ function rollupBuild(opt = {}) {
     plugins: [swc(swcConfig), metablock(metablockConfig)],
   };
 }
+
+/**
+ * @typedef {Parameters<swc>[0]} SWCConfig
+ * @typedef {Parameters<metablock>[0]} MetablockConfig
+ */
 
 export default rollupBuild;

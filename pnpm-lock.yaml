@@ -35,10 +35,7 @@ importers:
       '@tsconfig/recommended': 1.0.1
 
   packages/better-steam-rating:
-    specifiers:
-      tsconfig: workspace:*
-    devDependencies:
-      tsconfig: link:../_tsconfig
+    specifiers: {}
 
   packages/douban2rarbg:
     specifiers:

@@ -23,28 +23,58 @@ importers:
       typescript: 4.9.4
 
   packages/_template:
-    specifiers: {}
+    specifiers:
+      tsconfig: workspace:*
+    devDependencies:
+      tsconfig: link:../_tsconfig
+
+  packages/_tsconfig:
+    specifiers:
+      '@tsconfig/recommended': ^1.0.1
+    devDependencies:
+      '@tsconfig/recommended': 1.0.1
 
   packages/better-steam-rating:
-    specifiers: {}
+    specifiers:
+      tsconfig: workspace:*
+    devDependencies:
+      tsconfig: link:../_tsconfig
 
   packages/douban2rarbg:
-    specifiers: {}
+    specifiers:
+      tsconfig: workspace:*
+    devDependencies:
+      tsconfig: link:../_tsconfig
 
   packages/down-git:
-    specifiers: {}
+    specifiers:
+      tsconfig: workspace:*
+    devDependencies:
+      tsconfig: link:../_tsconfig
 
   packages/exclude-dv:
-    specifiers: {}
+    specifiers:
+      tsconfig: workspace:*
+    devDependencies:
+      tsconfig: link:../_tsconfig
 
   packages/ghproxy-gist-raw:
-    specifiers: {}
+    specifiers:
+      tsconfig: workspace:*
+    devDependencies:
+      tsconfig: link:../_tsconfig
 
   packages/ghproxy-raw:
-    specifiers: {}
+    specifiers:
+      tsconfig: workspace:*
+    devDependencies:
+      tsconfig: link:../_tsconfig
 
   packages/ghproxy-releases:
-    specifiers: {}
+    specifiers:
+      tsconfig: workspace:*
+    devDependencies:
+      tsconfig: link:../_tsconfig
 
 packages:
 
@@ -162,6 +192,10 @@ packages:
       '@swc/core-win32-arm64-msvc': 1.3.22
       '@swc/core-win32-ia32-msvc': 1.3.22
       '@swc/core-win32-x64-msvc': 1.3.22
+    dev: true
+
+  /@tsconfig/recommended/1.0.1:
+    resolution: {integrity: sha512-2xN+iGTbPBEzGSnVp/Hd64vKJCJWxsi9gfs88x4PPMyEjHJoA3o5BY9r5OLPHIZU2pAQxkSAsJFqn6itClP8mQ==}
     dev: true
 
   /ansi-styles/4.3.0:

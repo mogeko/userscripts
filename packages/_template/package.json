@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "There is a template to create UserScript.",
   "scripts": {
-    "build": "rollup --config rollup.config.js",
+    "build": "tsc && rollup --config rollup.config.js",
     "format": "prettier --write .",
     "lint": "prettier --check ."
   },
@@ -12,5 +12,8 @@
     "tampermonkey"
   ],
   "author": "Mogeko",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "tsconfig": "workspace:*"
+  }
 }

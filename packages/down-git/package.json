@@ -3,7 +3,7 @@
   "version": "0.0.4",
   "description": "Create GitHub Resource Download Link.",
   "scripts": {
-    "build": "rollup --config rollup.config.js",
+    "build": "tsc && rollup --config rollup.config.js",
     "format": "prettier --write .",
     "lint": "prettier --check ."
   },
@@ -13,5 +13,8 @@
     "github"
   ],
   "author": "Mogeko",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "tsconfig": "workspace:*"
+  }
 }

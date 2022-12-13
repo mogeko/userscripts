@@ -3,7 +3,7 @@
   "version": "0.0.3",
   "description": "Excluding the result of Dolby Vision in RARBG.to.",
   "scripts": {
-    "build": "rollup --config rollup.config.js",
+    "build": "tsc && rollup --config rollup.config.js",
     "format": "prettier --write .",
     "lint": "prettier --check ."
   },
@@ -13,5 +13,8 @@
     "rarbg"
   ],
   "author": "Mogeko",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "tsconfig": "workspace:*"
+  }
 }

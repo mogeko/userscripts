@@ -1,6 +1,6 @@
 {
   "name": "exclude-dv",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Excluding the result of Dolby Vision in RARBG.to.",
   "scripts": {
     "build": "tsc && rollup --config rollup.config.js",

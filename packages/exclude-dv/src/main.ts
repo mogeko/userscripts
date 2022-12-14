@@ -1,10 +1,9 @@
-const HDR = "https://dyncdn.me/static/20/images/categories/cat_new52.gif";
+const DV_TRAIT = /(\w+[\.\-\ \[\]])+DV[\.\-\ \[\]](\w+[\.\-\ \[\]]?)+/;
 
 document.querySelectorAll("table.lista2t tr.lista2").forEach((tr) => {
-  const link = tr.querySelector<HTMLLinkElement>("td:nth-child(2) > a");
-  const cover = tr.querySelector<HTMLImageElement>("td:nth-child(1) img");
+  const link = tr.querySelector<HTMLAnchorElement>("td:nth-child(2) > a");
 
-  if (link?.title?.includes(".DV.") && cover?.src === HDR) {
+  if (DV_TRAIT.test(link?.innerHTML || "")) {
     console.log("[Exclude DV] Remove: ", link?.title);
     tr.remove();
   }

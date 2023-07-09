@@ -167,15 +167,39 @@ importers:
 
   packages/ghproxy-raw:
     devDependencies:
+      '@types/node':
+        specifier: ^20.4.1
+        version: 20.4.1
       tsconfig:
         specifier: workspace:*
         version: link:../_tsconfig
+      typescript:
+        specifier: ^5.1.6
+        version: 5.1.6
+      vite:
+        specifier: ^4.4.2
+        version: 4.4.2(@types/node@20.4.1)
+      vite-plugin-monkey:
+        specifier: ^3.3.0
+        version: 3.3.0(vite@4.4.2)
 
   packages/ghproxy-releases:
     devDependencies:
+      '@types/node':
+        specifier: ^20.4.1
+        version: 20.4.1
       tsconfig:
         specifier: workspace:*
         version: link:../_tsconfig
+      typescript:
+        specifier: ^5.1.6
+        version: 5.1.6
+      vite:
+        specifier: ^4.4.2
+        version: 4.4.2(@types/node@20.4.1)
+      vite-plugin-monkey:
+        specifier: ^3.3.0
+        version: 3.3.0(vite@4.4.2)
 
 packages:
 

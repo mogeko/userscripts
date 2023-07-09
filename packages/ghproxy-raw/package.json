@@ -2,21 +2,38 @@
   "name": "ghproxy-raw",
   "version": "0.1.3",
   "private": true,
+  "type": "module",
   "description": "通过代理为 GitHub Raw Assets 提供加速",
-  "scripts": {
-    "build": "tsc && rollup --config rollup.config.js",
-    "lint": "prettier --check .",
-    "fmt": "prettier --write ."
+  "author": {
+    "name": "Zheng Junyi",
+    "email": "zhengjunyi@live.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mogeko/userscripts.git",
+    "directory": "packages/ghproxy-gist-raw"
+  },
+  "homepage": "https://github.com/mogeko/userscripts/tree/master/packages/ghproxy-gist-raw#readme",
+  "bugs": {
+    "url": "https://github.com/mogeko/userscripts/issues",
+    "email": "zhengjunyi@live.com"
   },
   "keywords": [
     "userscript",
     "tampermonkey",
-    "github",
-    "gist"
+    "github"
   ],
-  "author": "Mogeko",
   "license": "MIT",
+  "scripts": {
+    "build": "vite build",
+    "lint": "prettier --check .",
+    "fmt": "prettier --write ."
+  },
   "devDependencies": {
-    "tsconfig": "workspace:*"
+    "@types/node": "^20.4.1",
+    "tsconfig": "workspace:*",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.2",
+    "vite-plugin-monkey": "^3.3.0"
   }
 }

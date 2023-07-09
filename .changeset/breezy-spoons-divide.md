@@ -2,4 +2,4 @@
 "douban2rarbg": patch
 ---
 
-Pack with `vite`
+Pack with [`vite`](https://vitejs.dev).

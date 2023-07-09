@@ -5,8 +5,8 @@
   "homepage": "https://github.com/mogeko/userscripts",
   "scripts": {
     "build": "turbo run build",
-    "fmt": "turbo run format",
     "lint": "turbo run lint",
+    "fmt": "turbo run fmt",
     "meta": "node ./scripts/meta.js"
   },
   "keywords": [

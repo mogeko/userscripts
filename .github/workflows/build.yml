@@ -12,17 +12,22 @@ jobs:
     name: Build Userscript
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Set up pnpm
+      - uses: actions/checkout@v3
+      - name: Setup pnpm
         uses: pnpm/action-setup@v2.2.4
         with:
           version: 8
-      - name: Set up Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 20
           cache: "pnpm"
+      - name: Cache Turborepo Tasks
+        uses: actions/cache@v3
+        with:
+          path: ${{ github.workspace }}/node_modules/.cache/turbo
+          key: ${{ runner.os }}-turbo-build-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: ${{ runner.os }}-turbo-
       - run: pnpm install
       - run: pnpm lint
       - run: pnpm build

@@ -1,6 +1,8 @@
 import { defineConfig } from "vite";
 import monkey from "vite-plugin-monkey";
 
+const baseURL = process.env.BASE_URL || "https://mogeko.github.io/userscripts";
+
 export default defineConfig({
   build: { outDir: "../../release", emptyOutDir: false },
   plugins: [
@@ -11,11 +13,10 @@ export default defineConfig({
       userscript: {
         name: "Douban2RARBG",
         namespace: "https://mogeko.me",
-        match: "https://movie.douban.com/subject/*",
         icon: "https://besticon.herokuapp.com/icon?size=80..120..200&url=douban.com",
-        downloadURL:
-          "https://mogeko.github.io/userscripts/douban2rarbg.user.js",
-        updateURL: "https://mogeko.github.io/userscripts/douban2rarbg.meta.js",
+        downloadURL: [baseURL, "douban2rarbg.user.js"].join("/"),
+        updateURL: [baseURL, "douban2rarbg.meta.js"].join("/"),
+        match: "https://movie.douban.com/subject/*",
         grant: "none",
       },
     }),

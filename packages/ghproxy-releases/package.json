@@ -11,9 +11,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/mogeko/userscripts.git",
-    "directory": "packages/ghproxy-gist-raw"
+    "directory": "packages/ghproxy-releases"
   },
-  "homepage": "https://github.com/mogeko/userscripts/tree/master/packages/ghproxy-gist-raw#readme",
+  "homepage": "https://github.com/mogeko/userscripts/tree/master/packages/ghproxy-releases#readme",
   "bugs": {
     "url": "https://github.com/mogeko/userscripts/issues",
     "email": "zhengjunyi@live.com"

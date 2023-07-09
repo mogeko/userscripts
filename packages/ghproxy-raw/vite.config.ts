@@ -1,6 +1,8 @@
 import { defineConfig } from "vite";
 import monkey from "vite-plugin-monkey";
 
+const baseURL = process.env.BASE_URL || "https://mogeko.github.io/userscripts";
+
 export default defineConfig({
   build: { outDir: "../../release", emptyOutDir: false },
   plugins: [
@@ -11,12 +13,12 @@ export default defineConfig({
       userscript: {
         name: "GitHub 加速 (Raw)",
         namespace: "https://mogeko.me",
-        match: "https://github.com/**",
         icon: "https://besticon.herokuapp.com/icon?size=80..120..200&url=github.com",
-        downloadURL: "https://mogeko.github.io/userscripts/ghproxy-raw.user.js",
-        updateURL: "https://mogeko.github.io/userscripts/ghproxy-raw.meta.js",
-        "run-at": "document-end",
+        downloadURL: [baseURL, "ghproxy-raw.user.js"].join("/"),
+        updateURL: [baseURL, "ghproxy-raw.meta.js"].join("/"),
+        match: "https://github.com/**",
         grant: "none",
+        "run-at": "document-end",
       },
     }),
   ],

@@ -1,12 +1,12 @@
-const argv = require("minimist")(process.argv.slice(2));
 const fs = require("node:fs").promises;
 const path = require("node:path");
 
 async function main() {
   const pkg = require(path.resolve(__dirname, "../package.json"));
-  const release_path = path.resolve(__dirname, "../release");
-  const release_files = await fs.readdir(release_path);
-  const base_url = argv.base_url ?? "https://mogeko.github.io/userscripts";
+  const releasePath = path.resolve(__dirname, "../release");
+  const releaseFiles = await fs.readdir(releasePath);
+  const baseURL =
+    process.env.BASE_URL || "https://mogeko.github.io/userscripts";
 
   const meta = {
     name: pkg.name,
@@ -14,9 +14,9 @@ async function main() {
     homepage: pkg.homepage,
     author: pkg.author,
     license: pkg.license,
-    resource: release_files
+    resource: releaseFiles
       .filter((file) => !file.endsWith("index.json"))
-      .map((file) => [base_url, file].join("/")),
+      .map((file) => [baseURL, file].join("/")),
     packer: "https://www.npmjs.com/package/vite",
     env: {
       NODE_VERSION: process.version,

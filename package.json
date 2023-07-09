@@ -1,6 +1,7 @@
 {
   "name": "userscripts",
   "version": "0.0.8",
+  "private": true,
   "description": "A monorepo of UserScript I bring about.",
   "homepage": "https://github.com/mogeko/userscripts",
   "scripts": {
@@ -8,15 +9,6 @@
     "lint": "turbo run lint",
     "fmt": "turbo run fmt",
     "meta": "node ./scripts/meta.js"
-  },
-  "keywords": [
-    "userscript",
-    "tampermonkey"
-  ],
-  "author": {
-    "name": "mogeko",
-    "email": "zhengjunyi@live.com",
-    "url": "https://mogeko.me"
   },
   "license": "MIT",
   "devDependencies": {

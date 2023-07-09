@@ -1,11 +1,12 @@
 {
   "name": "better-steam-rating",
   "version": "0.2.1",
+  "private": true,
   "description": "优化 Steam 的评分系统",
   "scripts": {
     "build": "rollup --config rollup.config.js",
-    "format": "prettier --write .",
-    "lint": "prettier --check ."
+    "lint": "prettier --check .",
+    "fmt": "prettier --write ."
   },
   "keywords": [
     "userscript",

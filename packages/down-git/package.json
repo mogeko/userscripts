@@ -1,11 +1,12 @@
 {
   "name": "down-git",
   "version": "0.0.4",
+  "private": true,
   "description": "Create GitHub Resource Download Link.",
   "scripts": {
     "build": "tsc && rollup --config rollup.config.js",
-    "format": "prettier --write .",
-    "lint": "prettier --check ."
+    "lint": "prettier --check .",
+    "fmt": "prettier --write ."
   },
   "keywords": [
     "userscript",

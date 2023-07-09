@@ -1,6 +1,9 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@2.3.1/schema.json",
-  "changelog": ["@changesets/changelog-github", { "repo": "mogeko/movisea" }],
+  "changelog": [
+    "@changesets/changelog-github",
+    { "repo": "mogeko/userscripts" }
+  ],
   "commit": false,
   "fixed": [],
   "linked": [],

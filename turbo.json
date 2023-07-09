@@ -2,11 +2,14 @@
   "$schema": "https://turbo.build/schema.json",
   "pipeline": {
     "build": {
-      "outputs": ["../../release/**"]
+      "dependsOn": ["^build"],
+      "outputs": ["../../release/**"],
+      "env": ["BASE_URL"]
     },
     "test": { "dependsOn": ["^build"], "outputs": [] },
     "cov": { "dependsOn": ["^build"], "outputs": [] },
     "lint": { "outputs": [] },
     "fmt": { "outputs": [], "cache": false }
-  }
+  },
+  "globalEnv": ["NODE_ENV", "GITHUB_TOKEN"]
 }

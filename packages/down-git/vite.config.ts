@@ -1,6 +1,8 @@
 import { defineConfig } from "vite";
 import monkey from "vite-plugin-monkey";
 
+const baseURL = process.env.BASE_URL || "https://mogeko.github.io/userscripts";
+
 export default defineConfig({
   build: { outDir: "../../release", emptyOutDir: false },
   plugins: [
@@ -11,16 +13,16 @@ export default defineConfig({
       userscript: {
         name: "Down Git",
         namespace: "http://mogeko.me",
+        icon: "https://besticon.herokuapp.com/icon?size=80..120..200&url=github.com",
+        downloadURL: [baseURL, "down-git.user.js"].join("/"),
+        updateURL: [baseURL, "down-git.meta.js"].join("/"),
         match: [
           "https://github.com/**",
           "https://github.com/**/tree/**",
           "https://github.com/**/blob/**",
         ],
-        icon: "https://besticon.herokuapp.com/icon?size=80..120..200&url=github.com",
-        downloadURL: "https://mogeko.github.io/userscripts/down-git.user.js",
-        updateURL: "https://mogeko.github.io/userscripts/down-git.meta.js",
-        "run-at": "document-idle",
         grant: "none",
+        "run-at": "document-idle",
       },
     }),
   ],

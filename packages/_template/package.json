@@ -1,11 +1,12 @@
 {
   "name": "template",
   "version": "0.0.1",
+  "private": true,
   "description": "There is a template to create UserScript.",
   "scripts": {
     "build": "tsc && rollup --config rollup.config.js",
-    "format": "prettier --write .",
-    "lint": "prettier --check ."
+    "lint": "prettier --check .",
+    "fmt": "prettier --write ."
   },
   "keywords": [
     "userscript",

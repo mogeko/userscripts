@@ -1,6 +1,6 @@
 const argv = require("minimist")(process.argv.slice(2));
-const fs = require("fs").promises;
-const path = require("path");
+const fs = require("node:fs").promises;
+const path = require("node:path");
 
 async function main() {
   const pkg = require(path.resolve(__dirname, "../package.json"));
@@ -14,8 +14,10 @@ async function main() {
     homepage: pkg.homepage,
     author: pkg.author,
     license: pkg.license,
-    resource: release_files.map((file) => `${base_url}/${file}`),
-    packer: "https://www.npmjs.com/package/rollup",
+    resource: release_files
+      .filter((file) => !file.endsWith("index.json"))
+      .map((file) => [base_url, file].join("/")),
+    packer: "https://www.npmjs.com/package/vite",
     env: {
       NODE_VERSION: process.version,
       RUNNER_OS: process.env.RUNNER_OS,

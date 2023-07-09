@@ -22,4 +22,4 @@ View this UserScript in [Greasy Fork](https://greasyfork.org/zh-CN/scripts/42718
 
 ## License
 
-The code in this project is released under the [MIT License](/LICENSE).
+The code in this project is released under the [MIT License](./LICENSE).

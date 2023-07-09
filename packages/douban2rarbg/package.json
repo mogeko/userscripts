@@ -1,11 +1,22 @@
 {
   "name": "douban2rarbg",
   "version": "0.6.4",
+  "private": true,
   "description": "Add direct links to RARBG & TPB from Douban.",
-  "scripts": {
-    "build": "tsc && rollup --config rollup.config.js",
-    "format": "prettier --write .",
-    "lint": "prettier --check ."
+  "type": "module",
+  "author": {
+    "name": "Zheng Junyi",
+    "email": "zhengjunyi@live.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mogeko/userscripts.git",
+    "directory": "packages/douban2rarbg"
+  },
+  "homepage": "https://github.com/mogeko/userscripts/tree/master/packages/douban2rarbg#readme",
+  "bugs": {
+    "url": "https://github.com/mogeko/userscripts/issues",
+    "email": "zhengjunyi@live.com"
   },
   "keywords": [
     "userscript",
@@ -13,9 +24,16 @@
     "douban",
     "rarbg"
   ],
-  "author": "Mogeko",
   "license": "MIT",
+  "scripts": {
+    "build": "vite build",
+    "lint": "prettier --check .",
+    "fmt": "prettier --write ."
+  },
   "devDependencies": {
-    "tsconfig": "workspace:*"
+    "tsconfig": "workspace:*",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.2",
+    "vite-plugin-monkey": "^3.3.0"
   }
 }

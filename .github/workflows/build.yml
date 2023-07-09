@@ -17,15 +17,12 @@ jobs:
       - name: Set up pnpm
         uses: pnpm/action-setup@v2.2.4
         with:
-          version: 7
+          version: 8
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
           cache: "pnpm"
-      - name: Install dependencies
-        run: pnpm install
-      - name: Lint check
-        run: pnpm lint
-      - name: Run build
-        run: pnpm build
+      - run: pnpm install
+      - run: pnpm lint
+      - run: pnpm build

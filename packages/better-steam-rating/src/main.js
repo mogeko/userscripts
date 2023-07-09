@@ -78,7 +78,7 @@ function checkFn() {
     }
 
     const innerHtml = `<span style="padding-left: 0.5em;width: 2em;display: inline-block;">${rate}</span><span style="width: 4.5em;display:inline-block;">${parseInt(
-      (num * rate) / 100
+      (num * rate) / 100,
     )}</span><span style="width: 3em;display:inline-block;">${days}</span><span style="width:3em;display:inline-block;">${realRate}</span>`;
 
     item.innerHTML = innerHtml;

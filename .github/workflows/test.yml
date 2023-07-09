@@ -1,15 +1,14 @@
-name: Build
+name: Test
 
 on:
   push:
-    branches-ignore: [master]
   pull_request:
     branches: [master]
   workflow_dispatch:
 
 jobs:
-  build:
-    name: Build Userscript
+  test:
+    name: Run Tests and Generate Coverage Report
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -26,7 +25,8 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ${{ github.workspace }}/node_modules/.cache/turbo
-          key: ${{ runner.os }}-turbo-build-${{ hashFiles('**/pnpm-lock.yaml') }}
+          key: ${{ runner.os }}-turbo-test-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: ${{ runner.os }}-turbo-
       - run: pnpm install
-      - run: pnpm build
+      - run: pnpm lint
+      - run: pnpm cov

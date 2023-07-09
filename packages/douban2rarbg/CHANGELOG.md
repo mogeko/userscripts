@@ -1,5 +1,11 @@
 # douban2rarbg
 
+## 0.6.7
+
+### Patch Changes
+
+- [#36](https://github.com/mogeko/userscripts/pull/36) [`f36de11`](https://github.com/mogeko/userscripts/commit/f36de116b34edc68ea014d846ab7094c9b2d1ad6) Thanks [@mogeko](https://github.com/mogeko)! - cover `name` with `Douban2RARBG` for metadata.
+
 ## 0.6.6
 
 ### Patch Changes

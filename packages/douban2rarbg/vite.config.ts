@@ -20,4 +20,13 @@ export default defineConfig({
       },
     }),
   ],
+
+  // Vitest config
+  define: { "import.meta.vitest": "undefined" },
+  test: {
+    includeSource: ["src/**/*.{js,ts}"],
+    coverage: {
+      reporter: ["text", "json", "html"],
+    },
+  },
 });

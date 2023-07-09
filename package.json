@@ -5,10 +5,10 @@
   "description": "A monorepo of UserScript I bring about.",
   "homepage": "https://github.com/mogeko/userscripts",
   "scripts": {
-    "build": "turbo run build",
+    "build": "turbo run build && pnpm run meta",
+    "meta": "node ./scripts/meta.cjs",
     "lint": "turbo run lint",
-    "fmt": "turbo run fmt",
-    "meta": "node ./scripts/meta.js"
+    "fmt": "turbo run fmt"
   },
   "license": "MIT",
   "devDependencies": {

@@ -17,7 +17,7 @@ async function main() {
     resource: release_files
       .filter((file) => !file.endsWith("index.json"))
       .map((file) => [base_url, file].join("/")),
-    packer: "https://www.npmjs.com/package/vite",
+    packer: ["rollup", "vite"],
     env: {
       NODE_VERSION: process.version,
       RUNNER_OS: process.env.RUNNER_OS,

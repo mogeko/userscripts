@@ -1,6 +1,6 @@
 {
   "name": "douban2rarbg",
-  "version": "0.6.5",
+  "version": "0.6.6",
   "private": true,
   "description": "Add direct links to RARBG & TPB from Douban.",
   "type": "module",

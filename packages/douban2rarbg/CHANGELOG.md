@@ -1,5 +1,11 @@
 # douban2rarbg
 
+## 0.6.6
+
+### Patch Changes
+
+- [#33](https://github.com/mogeko/userscripts/pull/33) [`75f9c59`](https://github.com/mogeko/userscripts/commit/75f9c59f3fa6dbb9700ae81479dec91bfcf43643) Thanks [@mogeko](https://github.com/mogeko)! - Increase tests.
+
 ## 0.6.5
 
 ### Patch Changes

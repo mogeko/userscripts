@@ -25,6 +25,7 @@ export default defineConfig({
   define: { "import.meta.vitest": "undefined" },
   test: {
     includeSource: ["src/**/*.{js,ts}"],
+    environment: "jsdom",
     coverage: {
       reporter: ["text", "json", "html"],
     },

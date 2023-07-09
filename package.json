@@ -17,6 +17,8 @@
   "scripts": {
     "build": "turbo run build && pnpm run meta",
     "meta": "node ./scripts/meta.cjs",
+    "test": "turbo run test",
+    "cov": "turbo run cov",
     "lint": "turbo run lint",
     "fmt": "turbo run fmt"
   },

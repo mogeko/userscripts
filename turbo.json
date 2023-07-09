@@ -4,6 +4,8 @@
     "build": {
       "outputs": ["../../release/**"]
     },
+    "test": { "dependsOn": ["^build"], "outputs": [] },
+    "cov": { "dependsOn": ["^build"], "outputs": [] },
     "lint": { "outputs": [] },
     "fmt": { "outputs": [], "cache": false }
   }

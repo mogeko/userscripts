@@ -1,0 +1,106 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`douban2rarbg > should pass 1`] = `
+<div
+  id="info"
+/>
+`;
+
+exports[`douban2rarbg > should work 1`] = `
+<div
+  id="info"
+>
+  <span
+    class="pl"
+  >
+    IMDb:
+  </span>
+   tt5057130
+  <br />
+  <span>
+    <span
+      class="pl"
+    >
+      资源: 
+    </span>
+    <span
+      class="attrs"
+    >
+      <a
+        href="https://rarbg.to/torrents.php?imdb=tt5057130&order=seeders&by=DESC"
+        target="_blank"
+      >
+        RARBG
+      </a>
+       / 
+      <a
+        href="https://rarbgmirror.com/torrents.php?imdb=tt5057130&order=seeders&by=DESC"
+        target="_blank"
+      >
+        RARBG (Mirror)
+      </a>
+       / 
+      <a
+        href="https://torrentgalaxy.to/torrents.php?search=tt5057130"
+        target="_blank"
+      >
+        TorrentGalaxy
+      </a>
+       / 
+      <a
+        href="https://thepiratebay.org/search.php?q=tt5057130"
+        target="_blank"
+      >
+        TPB
+      </a>
+    </span>
+  </span>
+  <br />
+  <span>
+    <span
+      class="pl"
+    >
+      字幕: 
+    </span>
+    <span
+      class="attrs"
+    >
+      <a
+        href="https://www.opensubtitles.org/zh/search/imdbid-5057130/sublanguageid-all/moviename-tt5057130"
+        target="_blank"
+      >
+        opensubtitles
+      </a>
+       / 
+      <a
+        href="https://subhd.tv/d/26629153"
+        target="_blank"
+      >
+        SubHD
+      </a>
+       / 
+      <a
+        href="https://so.zimuku.org/search?q=tt5057130"
+        target="_blank"
+      >
+        字幕库
+      </a>
+       / 
+      <a
+        href="https://r3sub.com/search.php?s=tt5057130"
+        target="_blank"
+      >
+        R3SUB
+      </a>
+       / 
+      <a
+        href="http://www.ddzimu.com/download/xslist.php?key=26629153"
+        target="_blank"
+      >
+        点点字幕
+      </a>
+    </span>
+  </span>
+  <br />
+</div>
+`;

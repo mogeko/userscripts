@@ -16,11 +16,28 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
-    name: Create PR or Deploy to Pages
+  changesets:
+    name: Check and Create Version PR
     runs-on: ubuntu-latest
     outputs:
       hasChangesets: ${{ steps.changesets.outputs.hasChangesets }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Create Version PR or Deploy to Pages
+        id: changesets
+        uses: changesets/action@v1.4.5
+        with:
+          commit: "chore(release): version packages"
+          title: "chore(release): version packages"
+          version: node .github/changeset-version.cjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  build:
+    name: Build Userscript
+    if: needs.changesets.outputs.hasChangesets == 'false'
+    needs: changesets
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: Setup pnpm
@@ -38,24 +55,13 @@ jobs:
       - run: pnpm install
       - run: pnpm build
       - run: pnpm meta --base_url=${{ steps.pages.outputs.base_url }}
-      - name: Create Version PR or Deploy to Pages
-        id: changesets
-        uses: changesets/action@v1.4.5
-        with:
-          commit: "chore(release): version packages"
-          title: "chore(release): version packages"
-          version: node .github/changeset-version.cjs
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NODE_ENV: "production"
       - name: Upload artifact
-        if: steps.changesets.outputs.hasChangesets == 'false'
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./release
 
   deploy:
-    if: needs.build.outputs.hasChangesets == 'false'
+    name: Deploy to GitHub Pages
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

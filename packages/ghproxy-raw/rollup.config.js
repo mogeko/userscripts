@@ -1,3 +1,3 @@
-import rollupBuild from "../../scripts/build";
+import { rollupBuilder } from "../../scripts/rollup-builder.mjs";
 
-export default rollupBuild();
+export default rollupBuilder();

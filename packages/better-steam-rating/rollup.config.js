@@ -1,8 +1,8 @@
-import rollupBuild from "../../scripts/build";
+import { rollupBuilder } from "../../scripts/rollup-builder.mjs";
 
 const pkg = require("./package.json");
 
-export default rollupBuild({
+export default rollupBuilder({
   mainFile: `${__dirname}/src/main.js`,
   swcConfig: {
     jsc: { target: "es5" },

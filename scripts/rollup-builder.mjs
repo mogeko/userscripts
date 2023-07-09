@@ -30,7 +30,7 @@ import path from "path";
  * export default rollupBuild();
  * ```
  */
-function rollupBuild(opt = {}) {
+export function rollupBuilder(opt = {}) {
   const pkg = require(`${path.resolve(__dirname)}/package.json`);
   const swcConfig = opt.swcConfig ?? {
     jsc: {
@@ -61,5 +61,3 @@ function rollupBuild(opt = {}) {
  * @typedef {Parameters<swc>[0]} SWCConfig
  * @typedef {Parameters<metablock>[0]} MetablockConfig
  */
-
-export default rollupBuild;

@@ -9,8 +9,8 @@ export default defineConfig({
       build: { metaFileName: true },
       server: { mountGmApi: true },
       userscript: {
+        name: "Douban2RARBG",
         namespace: "https://mogeko.me",
-        supportURL: "https://github.com/mogeko/userscripts/issues",
         match: "https://movie.douban.com/subject/*",
         icon: "https://besticon.herokuapp.com/icon?size=80..120..200&url=douban.com",
         downloadURL:

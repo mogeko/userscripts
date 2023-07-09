@@ -4,11 +4,7 @@
     "build": {
       "outputs": ["../../release/**"]
     },
-    "lint": {
-      "outputs": []
-    },
-    "format": {
-      "outputs": []
-    }
+    "lint": { "outputs": [] },
+    "fmt": { "outputs": [], "cache": false }
   }
 }

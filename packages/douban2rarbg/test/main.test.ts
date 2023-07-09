@@ -9,7 +9,7 @@ describe("douban2rarbg", () => {
         url: "https://movie.douban.com/subject/26629153",
         referrer: "https://movie.douban.com",
         contentType: "text/html",
-      }
+      },
     ).window.document;
 
     await import("../src/main");

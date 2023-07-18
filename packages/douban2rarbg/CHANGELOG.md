@@ -1,5 +1,19 @@
 # douban2rarbg
 
+## 0.8.0
+
+### Minor Changes
+
+- [#42](https://github.com/mogeko/userscripts/pull/42) [`c8677be`](https://github.com/mogeko/userscripts/commit/c8677beddf119aae6b9487dfbe3f101abd0f7ff6) Thanks [@mogeko](https://github.com/mogeko)! - Add a new bittorrent website [Yify](https://yts.mx).
+
+### Patch Changes
+
+- [#42](https://github.com/mogeko/userscripts/pull/42) [`45dee47`](https://github.com/mogeko/userscripts/commit/45dee4757603df84318b140ba512f16e63fe16b5) Thanks [@mogeko](https://github.com/mogeko)! - Update devDependencies.
+
+  - bump `@types/node` from `20.4.1` to `20.4.2`.
+  - bump `vite` from `4.4.2` to `4.4.4`.
+  - bump `vite-plugin-monkey` from `3.3.0` to `3.3.1`.
+
 ## 0.7.0
 
 ### Minor Changes

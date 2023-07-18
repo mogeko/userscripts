@@ -41,6 +41,13 @@ exports[`douban2rarbg > should work 1`] = `
       </a>
        / 
       <a
+        href="https://yts.mx/browse-movies/tt5057130/all/all/0/latest/0/all"
+        target="_blank"
+      >
+        Yify
+      </a>
+       / 
+      <a
         href="https://torrentgalaxy.to/torrents.php?search=tt5057130"
         target="_blank"
       >

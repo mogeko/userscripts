@@ -34,10 +34,10 @@ exports[`douban2rarbg > should work 1`] = `
       </a>
        / 
       <a
-        href="https://rarbgmirror.com/torrents.php?imdb=tt5057130&order=seeders&by=DESC"
+        href="https://psa.wf/?s=tt5057130"
         target="_blank"
       >
-        RARBG (Mirror)
+        PSA
       </a>
        / 
       <a

@@ -1,5 +1,15 @@
 # douban2rarbg
 
+## 0.7.0
+
+### Minor Changes
+
+- [#40](https://github.com/mogeko/userscripts/pull/40) [`305bab7`](https://github.com/mogeko/userscripts/commit/305bab7cc4f25b38ebb788853ffb40a394b2d730) Thanks [@mogeko](https://github.com/mogeko)! - Add a new bittorrent website [PSArips](https://psa.wf).
+
+- [#40](https://github.com/mogeko/userscripts/pull/40) [`d802162`](https://github.com/mogeko/userscripts/commit/d8021627f684e2bda9973543f6eea865ce1d7e89) Thanks [@mogeko](https://github.com/mogeko)! - feat: remove [the mirror site for RARBG](https://rarbgmirror.com).
+
+  However, as a souvenir, [the official website of RARBG](https://rarbg.to) has been retained.
+
 ## 0.6.7
 
 ### Patch Changes

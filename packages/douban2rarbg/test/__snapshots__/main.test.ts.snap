@@ -34,13 +34,6 @@ exports[`douban2rarbg > should work 1`] = `
       </a>
        / 
       <a
-        href="https://rarbgmirror.com/torrents.php?imdb=tt5057130&order=seeders&by=DESC"
-        target="_blank"
-      >
-        RARBG (Mirror)
-      </a>
-       / 
-      <a
         href="https://torrentgalaxy.to/torrents.php?search=tt5057130"
         target="_blank"
       >

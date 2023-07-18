@@ -1,8 +1,6 @@
 const META_DATA = {
   资源: {
     RARBG: "https://rarbg.to/torrents.php?imdb=%i&order=seeders&by=DESC",
-    "RARBG (Mirror)":
-      "https://rarbgmirror.com/torrents.php?imdb=%i&order=seeders&by=DESC",
     TorrentGalaxy: "https://torrentgalaxy.to/torrents.php?search=%i",
     TPB: "https://thepiratebay.org/search.php?q=%i",
   },

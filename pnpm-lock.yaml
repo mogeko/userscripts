@@ -36,11 +36,11 @@ importers:
         specifier: ^5.1.6
         version: 5.1.6
       vite:
-        specifier: ^4.4.4
-        version: 4.4.4(@types/node@20.4.2)
+        specifier: ^4.4.7
+        version: 4.4.7(@types/node@20.4.2)
       vite-plugin-monkey:
         specifier: ^3.3.1
-        version: 3.3.1(vite@4.4.4)
+        version: 3.3.1(vite@4.4.7)
 
   packages/_tsconfig:
     devDependencies:
@@ -60,11 +60,11 @@ importers:
         specifier: ^5.1.6
         version: 5.1.6
       vite:
-        specifier: ^4.4.4
-        version: 4.4.4(@types/node@20.4.2)
+        specifier: ^4.4.7
+        version: 4.4.7(@types/node@20.4.2)
       vite-plugin-monkey:
         specifier: ^3.3.1
-        version: 3.3.1(vite@4.4.4)
+        version: 3.3.1(vite@4.4.7)
 
   packages/douban2rarbg:
     devDependencies:
@@ -87,11 +87,11 @@ importers:
         specifier: ^5.1.6
         version: 5.1.6
       vite:
-        specifier: ^4.4.4
-        version: 4.4.4(@types/node@20.4.2)
+        specifier: ^4.4.7
+        version: 4.4.7(@types/node@20.4.2)
       vite-plugin-monkey:
         specifier: ^3.3.1
-        version: 3.3.1(vite@4.4.4)
+        version: 3.3.1(vite@4.4.7)
       vitest:
         specifier: ^0.33.0
         version: 0.33.0(jsdom@22.1.0)
@@ -108,11 +108,11 @@ importers:
         specifier: ^5.1.6
         version: 5.1.6
       vite:
-        specifier: ^4.4.4
-        version: 4.4.4(@types/node@20.4.2)
+        specifier: ^4.4.7
+        version: 4.4.7(@types/node@20.4.2)
       vite-plugin-monkey:
         specifier: ^3.3.1
-        version: 3.3.1(vite@4.4.4)
+        version: 3.3.1(vite@4.4.7)
 
   packages/exclude-dv:
     devDependencies:
@@ -126,11 +126,11 @@ importers:
         specifier: ^5.1.6
         version: 5.1.6
       vite:
-        specifier: ^4.4.4
-        version: 4.4.4(@types/node@20.4.2)
+        specifier: ^4.4.7
+        version: 4.4.7(@types/node@20.4.2)
       vite-plugin-monkey:
         specifier: ^3.3.1
-        version: 3.3.1(vite@4.4.4)
+        version: 3.3.1(vite@4.4.7)
 
   packages/ghproxy-gist-raw:
     devDependencies:
@@ -144,11 +144,11 @@ importers:
         specifier: ^5.1.6
         version: 5.1.6
       vite:
-        specifier: ^4.4.4
-        version: 4.4.4(@types/node@20.4.2)
+        specifier: ^4.4.7
+        version: 4.4.7(@types/node@20.4.2)
       vite-plugin-monkey:
         specifier: ^3.3.1
-        version: 3.3.1(vite@4.4.4)
+        version: 3.3.1(vite@4.4.7)
 
   packages/ghproxy-raw:
     devDependencies:
@@ -162,11 +162,11 @@ importers:
         specifier: ^5.1.6
         version: 5.1.6
       vite:
-        specifier: ^4.4.4
-        version: 4.4.4(@types/node@20.4.2)
+        specifier: ^4.4.7
+        version: 4.4.7(@types/node@20.4.2)
       vite-plugin-monkey:
         specifier: ^3.3.1
-        version: 3.3.1(vite@4.4.4)
+        version: 3.3.1(vite@4.4.7)
 
   packages/ghproxy-releases:
     devDependencies:
@@ -180,11 +180,11 @@ importers:
         specifier: ^5.1.6
         version: 5.1.6
       vite:
-        specifier: ^4.4.4
-        version: 4.4.4(@types/node@20.4.2)
+        specifier: ^4.4.7
+        version: 4.4.7(@types/node@20.4.2)
       vite-plugin-monkey:
         specifier: ^3.3.1
-        version: 3.3.1(vite@4.4.4)
+        version: 3.3.1(vite@4.4.7)
 
 packages:
 
@@ -3288,7 +3288,7 @@ packages:
       mlly: 1.4.0
       pathe: 1.1.1
       picocolors: 1.0.0
-      vite: 4.4.4(@types/node@20.4.2)
+      vite: 4.4.7(@types/node@20.4.2)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -3300,7 +3300,7 @@ packages:
       - terser
     dev: true
 
-  /vite-plugin-monkey@3.3.1(vite@4.4.4):
+  /vite-plugin-monkey@3.3.1(vite@4.4.7):
     resolution: {integrity: sha512-peroiyopLphJOJx1mRLEMr5hucSoXzNNhwQ4wmsl+7QcaXhEjDAEY7HIdRlfcDxJESByadKAm+o0YEiapjiX5w==}
     engines: {node: ^14.18 || >= 16, pnpm: '>=6'}
     peerDependencies:
@@ -3318,13 +3318,13 @@ packages:
       open: 9.1.0
       picocolors: 1.0.0
       systemjs: 6.14.1
-      vite: 4.4.4(@types/node@20.4.2)
+      vite: 4.4.7(@types/node@20.4.2)
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite@4.4.4(@types/node@20.4.2):
-    resolution: {integrity: sha512-4mvsTxjkveWrKDJI70QmelfVqTm+ihFAb6+xf4sjEU2TmUCTlVX87tmg/QooPEMQb/lM9qGHT99ebqPziEd3wg==}
+  /vite@4.4.7(@types/node@20.4.2):
+    resolution: {integrity: sha512-6pYf9QJ1mHylfVh39HpuSfMPojPSKVxZvnclX1K1FyZ1PXDOcLBibdq5t1qxJSnL63ca8Wf4zts6mD8u8oc9Fw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -3412,7 +3412,7 @@ packages:
       strip-literal: 1.0.1
       tinybench: 2.5.0
       tinypool: 0.6.0
-      vite: 4.4.4(@types/node@20.4.2)
+      vite: 4.4.7(@types/node@20.4.2)
       vite-node: 0.33.0(@types/node@20.4.2)
       why-is-node-running: 2.2.2
     transitivePeerDependencies:

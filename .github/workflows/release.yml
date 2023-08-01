@@ -52,7 +52,7 @@ jobs:
           NODE_ENV: production
       - name: Upload artifact
         if: steps.changesets.outputs.hasChangesets == 'false'
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v2
         with:
           path: ./release
 

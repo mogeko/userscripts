@@ -39,8 +39,8 @@ importers:
         specifier: ^4.4.9
         version: 4.4.9(@types/node@20.4.2)
       vite-plugin-monkey:
-        specifier: ^3.3.1
-        version: 3.3.1(vite@4.4.9)
+        specifier: ^3.5.0
+        version: 3.5.0(vite@4.4.9)
 
   packages/_tsconfig:
     devDependencies:
@@ -63,8 +63,8 @@ importers:
         specifier: ^4.4.9
         version: 4.4.9(@types/node@20.4.2)
       vite-plugin-monkey:
-        specifier: ^3.3.1
-        version: 3.3.1(vite@4.4.9)
+        specifier: ^3.5.0
+        version: 3.5.0(vite@4.4.9)
 
   packages/douban2rarbg:
     devDependencies:
@@ -90,8 +90,8 @@ importers:
         specifier: ^4.4.9
         version: 4.4.9(@types/node@20.4.2)
       vite-plugin-monkey:
-        specifier: ^3.3.1
-        version: 3.3.1(vite@4.4.9)
+        specifier: ^3.5.0
+        version: 3.5.0(vite@4.4.9)
       vitest:
         specifier: ^0.34.3
         version: 0.34.3(jsdom@22.1.0)
@@ -111,8 +111,8 @@ importers:
         specifier: ^4.4.9
         version: 4.4.9(@types/node@20.4.2)
       vite-plugin-monkey:
-        specifier: ^3.3.1
-        version: 3.3.1(vite@4.4.9)
+        specifier: ^3.5.0
+        version: 3.5.0(vite@4.4.9)
 
   packages/exclude-dv:
     devDependencies:
@@ -129,8 +129,8 @@ importers:
         specifier: ^4.4.9
         version: 4.4.9(@types/node@20.4.2)
       vite-plugin-monkey:
-        specifier: ^3.3.1
-        version: 3.3.1(vite@4.4.9)
+        specifier: ^3.5.0
+        version: 3.5.0(vite@4.4.9)
 
   packages/ghproxy-gist-raw:
     devDependencies:
@@ -147,8 +147,8 @@ importers:
         specifier: ^4.4.9
         version: 4.4.9(@types/node@20.4.2)
       vite-plugin-monkey:
-        specifier: ^3.3.1
-        version: 3.3.1(vite@4.4.9)
+        specifier: ^3.5.0
+        version: 3.5.0(vite@4.4.9)
 
   packages/ghproxy-raw:
     devDependencies:
@@ -165,8 +165,8 @@ importers:
         specifier: ^4.4.9
         version: 4.4.9(@types/node@20.4.2)
       vite-plugin-monkey:
-        specifier: ^3.3.1
-        version: 3.3.1(vite@4.4.9)
+        specifier: ^3.5.0
+        version: 3.5.0(vite@4.4.9)
 
   packages/ghproxy-releases:
     devDependencies:
@@ -183,8 +183,8 @@ importers:
         specifier: ^4.4.9
         version: 4.4.9(@types/node@20.4.2)
       vite-plugin-monkey:
-        specifier: ^3.3.1
-        version: 3.3.1(vite@4.4.9)
+        specifier: ^3.5.0
+        version: 3.5.0(vite@4.4.9)
 
 packages:
 
@@ -821,7 +821,7 @@ packages:
   /@vitest/snapshot@0.34.3:
     resolution: {integrity: sha512-QyPaE15DQwbnIBp/yNJ8lbvXTZxS00kRly0kfFgAD5EYmCbYcA+1EEyRalc93M0gosL/xHeg3lKAClIXYpmUiQ==}
     dependencies:
-      magic-string: 0.30.1
+      magic-string: 0.30.3
       pathe: 1.1.1
       pretty-format: 29.6.1
     dev: true
@@ -2223,6 +2223,13 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
+  /magic-string@0.30.3:
+    resolution: {integrity: sha512-B7xGbll2fG/VjP+SWg4sX3JynwIU0mjoTc6MPpKNuIvftk6u6vqhDnk1R80b8C2GBR6ywqy+1DcKBrevBg+bmw==}
+    engines: {node: '>=12'}
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.4.15
+    dev: true
+
   /make-dir@3.1.0:
     resolution: {integrity: sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw==}
     engines: {node: '>=8'}
@@ -3011,8 +3018,8 @@ packages:
     resolution: {integrity: sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==}
     dev: true
 
-  /systemjs@6.14.1:
-    resolution: {integrity: sha512-8ftwWd+XnQtZ/aGbatrN4QFNGrKJzmbtixW+ODpci7pyoTajg4sonPP8aFLESAcuVxaC1FyDESt+SpfFCH9rZQ==}
+  /systemjs@6.14.2:
+    resolution: {integrity: sha512-1TlOwvKWdXxAY9vba+huLu99zrQURDWA8pUTYsRIYDZYQbGyK+pyEP4h4dlySsqo7ozyJBmYD20F+iUHhAltEg==}
     dev: true
 
   /term-size@2.2.1:
@@ -3299,8 +3306,8 @@ packages:
       - terser
     dev: true
 
-  /vite-plugin-monkey@3.3.1(vite@4.4.9):
-    resolution: {integrity: sha512-peroiyopLphJOJx1mRLEMr5hucSoXzNNhwQ4wmsl+7QcaXhEjDAEY7HIdRlfcDxJESByadKAm+o0YEiapjiX5w==}
+  /vite-plugin-monkey@3.5.0(vite@4.4.9):
+    resolution: {integrity: sha512-NS3qiLvnzyRPsbfanbnzMGk33rCmN1iGs2RkGykl7H5aCwZhpb7nyUSOy3CD8haP8rqTQ9BS23BLprV5MRIy/Q==}
     engines: {node: ^14.18 || >= 16, pnpm: '>=6'}
     peerDependencies:
       vite: '>=3.0.0'
@@ -3312,11 +3319,11 @@ packages:
       cross-spawn: 7.0.3
       detect-port: 1.5.1
       htmlparser2: 9.0.0
-      magic-string: 0.30.1
+      magic-string: 0.30.3
       mrmime: 1.0.1
       open: 9.1.0
       picocolors: 1.0.0
-      systemjs: 6.14.1
+      systemjs: 6.14.2
       vite: 4.4.9(@types/node@20.4.2)
     transitivePeerDependencies:
       - supports-color

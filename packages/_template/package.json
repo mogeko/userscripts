@@ -32,7 +32,7 @@
     "@types/node": "^20.5.7",
     "tsconfig": "workspace:*",
     "typescript": "^5.2.2",
-    "vite": "^4.4.9",
+    "vite": "^5.0.4",
     "vite-plugin-monkey": "^3.5.0"
   }
 }

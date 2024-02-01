@@ -30,7 +30,7 @@
     "fmt": "prettier --write ."
   },
   "devDependencies": {
-    "@types/node": "^20.11.5",
+    "@types/node": "^20.11.14",
     "tsconfig": "workspace:*",
     "typescript": "^5.2.2",
     "vite": "^5.0.12",

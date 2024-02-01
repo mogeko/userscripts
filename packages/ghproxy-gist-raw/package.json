@@ -35,6 +35,6 @@
     "tsconfig": "workspace:*",
     "typescript": "^5.2.2",
     "vite": "^5.0.12",
-    "vite-plugin-monkey": "^3.5.0"
+    "vite-plugin-monkey": "^3.5.1"
   }
 }

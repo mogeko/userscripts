@@ -3,13 +3,23 @@
 
 version: 2
 updates:
-  # Enable version updates for GitHub Actions
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "monthly"
   # Enable version updates for PNPM
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "monthly"
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    groups:
+      devDependencies:
+        dependency-type: "development"
+      dependencies:
+        dependency-type: "production"
+  # Enable version updates for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    groups:
+      github-actions:
+        patterns: ["*"]

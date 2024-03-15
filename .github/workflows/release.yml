@@ -24,7 +24,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Setup pnpm
-        uses: pnpm/action-setup@v2.4.0
+        uses: pnpm/action-setup@v3.0.0
         with:
           version: 8
       - name: Setup Node.js
@@ -42,7 +42,7 @@ jobs:
           NODE_ENV: production
       - name: Create Version PR or Deploy to Pages
         id: changesets
-        uses: changesets/action@v1.4.5
+        uses: changesets/action@v1.4.6
         with:
           commit: "chore(release): version packages"
           title: "chore(release): version packages"

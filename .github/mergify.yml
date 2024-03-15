@@ -1,0 +1,27 @@
+queue_rules:
+  - name: dependabot
+    conditions:
+      - "check-success=Build Userscript"
+      - "check-success=Run Tests and Generate Coverage Report"
+    batch_size: 10
+    batch_max_wait_time: 5min
+
+pull_request_rules:
+  - name: Automatic merge when release new versions
+    conditions:
+      - "title=chore(release): version packages"
+      - "commits=chore(release): version packages"
+      - "author=github-actions[bot]"
+      - "files~=CHANGELOG.md"
+      - "head~=changeset-release"
+    actions:
+      merge:
+  - name: Automatic merge from dependabot
+    conditions:
+      - "author=dependabot[bot]"
+      - "label=dependencies"
+      - "check-success=Build Userscript"
+      - "check-success=Run Tests and Generate Coverage Report"
+    actions:
+      queue:
+        name: dependabot

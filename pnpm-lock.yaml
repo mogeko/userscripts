@@ -18,53 +18,53 @@ importers:
         specifier: ^3.2.5
         version: 3.2.5
       turbo:
-        specifier: ^1.13.0
-        version: 1.13.0
+        specifier: ^1.13.2
+        version: 1.13.2
       typescript:
-        specifier: ^5.4.3
-        version: 5.4.3
+        specifier: ^5.4.4
+        version: 5.4.4
 
   packages/_template:
     devDependencies:
       '@types/node':
-        specifier: ^20.12.2
-        version: 20.12.2
+        specifier: ^20.12.5
+        version: 20.12.5
       tsconfig:
         specifier: workspace:*
         version: link:../_tsconfig
       typescript:
-        specifier: ^5.4.3
-        version: 5.4.3
+        specifier: ^5.4.4
+        version: 5.4.4
       vite:
-        specifier: ^5.2.7
-        version: 5.2.7(@types/node@20.12.2)
+        specifier: ^5.2.8
+        version: 5.2.8(@types/node@20.12.5)
       vite-plugin-monkey:
         specifier: ^3.5.2
-        version: 3.5.2(vite@5.2.7)
+        version: 3.5.2(vite@5.2.8)
 
   packages/_tsconfig:
     devDependencies:
       '@tsconfig/recommended':
-        specifier: ^1.0.5
-        version: 1.0.5
+        specifier: ^1.0.6
+        version: 1.0.6
 
   packages/better-steam-rating:
     devDependencies:
       '@types/node':
-        specifier: ^20.12.2
-        version: 20.12.2
+        specifier: ^20.12.5
+        version: 20.12.5
       tsconfig:
         specifier: workspace:*
         version: link:../_tsconfig
       typescript:
-        specifier: ^5.4.3
-        version: 5.4.3
+        specifier: ^5.4.4
+        version: 5.4.4
       vite:
-        specifier: ^5.2.7
-        version: 5.2.7(@types/node@20.12.2)
+        specifier: ^5.2.8
+        version: 5.2.8(@types/node@20.12.5)
       vite-plugin-monkey:
         specifier: ^3.5.2
-        version: 3.5.2(vite@5.2.7)
+        version: 3.5.2(vite@5.2.8)
 
   packages/douban2rarbg:
     devDependencies:
@@ -72,8 +72,8 @@ importers:
         specifier: ^21.1.4
         version: 21.1.6
       '@types/node':
-        specifier: ^20.12.2
-        version: 20.12.2
+        specifier: ^20.12.5
+        version: 20.12.5
       '@vitest/coverage-v8':
         specifier: ^1.4.0
         version: 1.4.0(vitest@1.4.0)
@@ -84,107 +84,107 @@ importers:
         specifier: workspace:*
         version: link:../_tsconfig
       typescript:
-        specifier: ^5.4.3
-        version: 5.4.3
+        specifier: ^5.4.4
+        version: 5.4.4
       vite:
-        specifier: ^5.2.7
-        version: 5.2.7(@types/node@20.12.2)
+        specifier: ^5.2.8
+        version: 5.2.8(@types/node@20.12.5)
       vite-plugin-monkey:
         specifier: ^3.5.2
-        version: 3.5.2(vite@5.2.7)
+        version: 3.5.2(vite@5.2.8)
       vitest:
         specifier: ^1.4.0
-        version: 1.4.0(@types/node@20.12.2)(jsdom@24.0.0)
+        version: 1.4.0(@types/node@20.12.5)(jsdom@24.0.0)
 
   packages/down-git:
     devDependencies:
       '@types/node':
-        specifier: ^20.12.2
-        version: 20.12.2
+        specifier: ^20.12.5
+        version: 20.12.5
       tsconfig:
         specifier: workspace:*
         version: link:../_tsconfig
       typescript:
-        specifier: ^5.4.3
-        version: 5.4.3
+        specifier: ^5.4.4
+        version: 5.4.4
       vite:
-        specifier: ^5.2.7
-        version: 5.2.7(@types/node@20.12.2)
+        specifier: ^5.2.8
+        version: 5.2.8(@types/node@20.12.5)
       vite-plugin-monkey:
         specifier: ^3.5.2
-        version: 3.5.2(vite@5.2.7)
+        version: 3.5.2(vite@5.2.8)
 
   packages/exclude-dv:
     devDependencies:
       '@types/node':
-        specifier: ^20.12.2
-        version: 20.12.2
+        specifier: ^20.12.5
+        version: 20.12.5
       tsconfig:
         specifier: workspace:*
         version: link:../_tsconfig
       typescript:
-        specifier: ^5.4.3
-        version: 5.4.3
+        specifier: ^5.4.4
+        version: 5.4.4
       vite:
-        specifier: ^5.2.7
-        version: 5.2.7(@types/node@20.12.2)
+        specifier: ^5.2.8
+        version: 5.2.8(@types/node@20.12.5)
       vite-plugin-monkey:
         specifier: ^3.5.2
-        version: 3.5.2(vite@5.2.7)
+        version: 3.5.2(vite@5.2.8)
 
   packages/ghproxy-gist-raw:
     devDependencies:
       '@types/node':
-        specifier: ^20.12.2
-        version: 20.12.2
+        specifier: ^20.12.5
+        version: 20.12.5
       tsconfig:
         specifier: workspace:*
         version: link:../_tsconfig
       typescript:
-        specifier: ^5.4.3
-        version: 5.4.3
+        specifier: ^5.4.4
+        version: 5.4.4
       vite:
-        specifier: ^5.2.7
-        version: 5.2.7(@types/node@20.12.2)
+        specifier: ^5.2.8
+        version: 5.2.8(@types/node@20.12.5)
       vite-plugin-monkey:
         specifier: ^3.5.2
-        version: 3.5.2(vite@5.2.7)
+        version: 3.5.2(vite@5.2.8)
 
   packages/ghproxy-raw:
     devDependencies:
       '@types/node':
-        specifier: ^20.12.2
-        version: 20.12.2
+        specifier: ^20.12.5
+        version: 20.12.5
       tsconfig:
         specifier: workspace:*
         version: link:../_tsconfig
       typescript:
-        specifier: ^5.4.3
-        version: 5.4.3
+        specifier: ^5.4.4
+        version: 5.4.4
       vite:
-        specifier: ^5.2.7
-        version: 5.2.7(@types/node@20.12.2)
+        specifier: ^5.2.8
+        version: 5.2.8(@types/node@20.12.5)
       vite-plugin-monkey:
         specifier: ^3.5.2
-        version: 3.5.2(vite@5.2.7)
+        version: 3.5.2(vite@5.2.8)
 
   packages/ghproxy-releases:
     devDependencies:
       '@types/node':
-        specifier: ^20.12.2
-        version: 20.12.2
+        specifier: ^20.12.5
+        version: 20.12.5
       tsconfig:
         specifier: workspace:*
         version: link:../_tsconfig
       typescript:
-        specifier: ^5.4.3
-        version: 5.4.3
+        specifier: ^5.4.4
+        version: 5.4.4
       vite:
-        specifier: ^5.2.7
-        version: 5.2.7(@types/node@20.12.2)
+        specifier: ^5.2.8
+        version: 5.2.8(@types/node@20.12.5)
       vite-plugin-monkey:
         specifier: ^3.5.2
-        version: 3.5.2(vite@5.2.7)
+        version: 3.5.2(vite@5.2.8)
 
 packages:
 
@@ -851,8 +851,8 @@ packages:
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
     dev: true
 
-  /@tsconfig/recommended@1.0.5:
-    resolution: {integrity: sha512-bbozf0TZVH1Tu9hET9HYTtKeOMBBR01kjhc8s+c9cDFQU8Jw6F9A3tRZYOWiMEyMqpf/3LSw2b528g1k8TkYvg==}
+  /@tsconfig/recommended@1.0.6:
+    resolution: {integrity: sha512-0IKu9GHYF1NGTJiYgfWwqnOQSlnE9V9R7YohHNNf0/fj/SyOZWzdd06JFr0fLpg1Mqw0kGbYg8w5xdkSqLKM9g==}
     dev: true
 
   /@types/estree@1.0.5:
@@ -866,7 +866,7 @@ packages:
   /@types/jsdom@21.1.6:
     resolution: {integrity: sha512-/7kkMsC+/kMs7gAYmmBR9P0vGTnOoLhQhyhQJSlXGI5bzTHp6xdo0TtKWQAsz6pmSAeVqKSbqeyP6hytqr9FDw==}
     dependencies:
-      '@types/node': 20.12.2
+      '@types/node': 20.12.5
       '@types/tough-cookie': 4.0.2
       parse5: 7.1.2
     dev: true
@@ -879,8 +879,8 @@ packages:
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
     dev: true
 
-  /@types/node@20.12.2:
-    resolution: {integrity: sha512-zQ0NYO87hyN6Xrclcqp7f8ZbXNbRfoGWNcMvHTPQp9UUrwI0mI7XBz+cu7/W6/VClYo2g63B0cjull/srU7LgQ==}
+  /@types/node@20.12.5:
+    resolution: {integrity: sha512-BD+BjQ9LS/D8ST9p5uqBxghlN+S42iuNxjsUGjeZobe/ciXzk2qb1B6IXc6AnRLS+yFJRpN2IPEHMzwspfDJNw==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -916,7 +916,7 @@ packages:
       strip-literal: 2.0.0
       test-exclude: 6.0.0
       v8-to-istanbul: 9.2.0
-      vitest: 1.4.0(@types/node@20.12.2)(jsdom@24.0.0)
+      vitest: 1.4.0(@types/node@20.12.5)(jsdom@24.0.0)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3318,64 +3318,64 @@ packages:
       yargs: 17.7.2
     dev: true
 
-  /turbo-darwin-64@1.13.0:
-    resolution: {integrity: sha512-ctHeJXtQgBcgxnCXwrJTGiq57HtwF7zWz5NTuSv//5yeU01BtQIt62ArKfjudOhRefWJbX3Z5srn88XTb9hfww==}
+  /turbo-darwin-64@1.13.2:
+    resolution: {integrity: sha512-CCSuD8CfmtncpohCuIgq7eAzUas0IwSbHfI8/Q3vKObTdXyN8vAo01gwqXjDGpzG9bTEVedD0GmLbD23dR0MLA==}
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-darwin-arm64@1.13.0:
-    resolution: {integrity: sha512-/Q9/pNFkF9w83tNxwMpgapwLYdQ12p8mpty2YQRoUiS9ClWkcqe136jR0mtuMqzlNlpREOFZaoyIthjt6Sdo0g==}
+  /turbo-darwin-arm64@1.13.2:
+    resolution: {integrity: sha512-0HySm06/D2N91rJJ89FbiI/AodmY8B3WDSFTVEpu2+8spUw7hOJ8okWOT0e5iGlyayUP9gr31eOeL3VFZkpfCw==}
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-64@1.13.0:
-    resolution: {integrity: sha512-hgbT7o020BGV4L7Sd8hhFTd5zVKPKxbsr0dPfel/9NkdTmptz2aGZ0Vb2MAa18SY3XaCQpDxmdYuOzvvRpo5ZA==}
+  /turbo-linux-64@1.13.2:
+    resolution: {integrity: sha512-7HnibgbqZrjn4lcfIouzlPu8ZHSBtURG4c7Bedu7WJUDeZo+RE1crlrQm8wuwO54S0siYqUqo7GNHxu4IXbioQ==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-arm64@1.13.0:
-    resolution: {integrity: sha512-WK01i2wDZARrV+HEs495A3hNeGMwQR5suYk7G+ceqqW7b+dOTlQdvUjnI3sg7wAnZPgjafFs/hoBaZdJjVa/nw==}
+  /turbo-linux-arm64@1.13.2:
+    resolution: {integrity: sha512-sUq4dbpk6SNKg/Hkwn256Vj2AEYSQdG96repio894h5/LEfauIK2QYiC/xxAeW3WBMc6BngmvNyURIg7ltrePg==}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-windows-64@1.13.0:
-    resolution: {integrity: sha512-hJgSZJZwlWHNwLEthaqJqJWGm4NqF5X/I7vE0sPE4i/jeDl8f0n1hcOkgJkJiNXVxhj+qy/9+4dzbPLKT9imaQ==}
+  /turbo-windows-64@1.13.2:
+    resolution: {integrity: sha512-DqzhcrciWq3dpzllJR2VVIyOhSlXYCo4mNEWl98DJ3FZ08PEzcI3ceudlH6F0t/nIcfSItK1bDP39cs7YoZHEA==}
     cpu: [x64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-windows-arm64@1.13.0:
-    resolution: {integrity: sha512-L/ErxYoXeq8tmjU/AIGicC9VyBN1zdYw8JlM4yPmMI0pJdY8E4GaYK1IiIazqq7M72lmQhU/WW7fV9FqEktwrw==}
+  /turbo-windows-arm64@1.13.2:
+    resolution: {integrity: sha512-WnPMrwfCXxK69CdDfS1/j2DlzcKxSmycgDAqV0XCYpK/812KB0KlvsVAt5PjEbZGXkY88pCJ1BLZHAjF5FcbqA==}
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo@1.13.0:
-    resolution: {integrity: sha512-r02GtNmkOPcQvUzVE6lg474QVLyU02r3yh3lUGqrFHf5h5ZEjgDGWILsAUqplVqjri1Y/oOkTssks4CObTAaiw==}
+  /turbo@1.13.2:
+    resolution: {integrity: sha512-rX/d9f4MgRT3yK6cERPAkfavIxbpBZowDQpgvkYwGMGDQ0Nvw1nc0NVjruE76GrzXQqoxR1UpnmEP54vBARFHQ==}
     hasBin: true
     optionalDependencies:
-      turbo-darwin-64: 1.13.0
-      turbo-darwin-arm64: 1.13.0
-      turbo-linux-64: 1.13.0
-      turbo-linux-arm64: 1.13.0
-      turbo-windows-64: 1.13.0
-      turbo-windows-arm64: 1.13.0
+      turbo-darwin-64: 1.13.2
+      turbo-darwin-arm64: 1.13.2
+      turbo-linux-64: 1.13.2
+      turbo-linux-arm64: 1.13.2
+      turbo-windows-64: 1.13.2
+      turbo-windows-arm64: 1.13.2
     dev: true
 
   /type-detect@4.0.8:
@@ -3442,8 +3442,8 @@ packages:
       possible-typed-array-names: 1.0.0
     dev: true
 
-  /typescript@5.4.3:
-    resolution: {integrity: sha512-KrPd3PKaCLr78MalgiwJnA25Nm8HAmdwN3mYUYZgG/wizIo9EainNVQI9/yDavtVFRN2h3k8uf3GLHuhDMgEHg==}
+  /typescript@5.4.4:
+    resolution: {integrity: sha512-dGE2Vv8cpVvw28v8HCPqyb08EzbBURxDpuhJvTrusShUfGnhHBafDsLdS1EhhxyL6BJQE+2cT3dDPAv+MQ6oLw==}
     engines: {node: '>=14.17'}
     hasBin: true
     dev: true
@@ -3503,7 +3503,7 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite-node@1.4.0(@types/node@20.12.2):
+  /vite-node@1.4.0(@types/node@20.12.5):
     resolution: {integrity: sha512-VZDAseqjrHgNd4Kh8icYHWzTKSCZMhia7GyHfhtzLW33fZlG9SwsB6CEhgyVOWkJfJ2pFLrp/Gj1FSfAiqH9Lw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -3512,7 +3512,7 @@ packages:
       debug: 4.3.4
       pathe: 1.1.1
       picocolors: 1.0.0
-      vite: 5.2.7(@types/node@20.12.2)
+      vite: 5.2.8(@types/node@20.12.5)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -3524,7 +3524,7 @@ packages:
       - terser
     dev: true
 
-  /vite-plugin-monkey@3.5.2(vite@5.2.7):
+  /vite-plugin-monkey@3.5.2(vite@5.2.8):
     resolution: {integrity: sha512-UaMfHv6PbuSzX11NFmxxpdI9/+WNdRt6OZLfrhKTkySpgPvbFqvME38J/1LpjqFXMgwjKWCTW28RRSEt+ygSRA==}
     engines: {node: ^14.18 || >= 16, pnpm: '>=6'}
     peerDependencies:
@@ -3541,11 +3541,11 @@ packages:
       open: 9.1.0
       picocolors: 1.0.0
       systemjs: 6.14.2
-      vite: 5.2.7(@types/node@20.12.2)
+      vite: 5.2.8(@types/node@20.12.5)
     dev: true
 
-  /vite@5.2.7(@types/node@20.12.2):
-    resolution: {integrity: sha512-k14PWOKLI6pMaSzAuGtT+Cf0YmIx12z9YGon39onaJNy8DLBfBJrzg9FQEmkAM5lpHBZs9wksWAsyF/HkpEwJA==}
+  /vite@5.2.8(@types/node@20.12.5):
+    resolution: {integrity: sha512-OyZR+c1CE8yeHw5V5t59aXsUPPVTHMDjEZz8MgguLL/Q7NblxhZUlTu9xSPqlsUO/y+X7dlU05jdhvyycD55DA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -3572,7 +3572,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.12.2
+      '@types/node': 20.12.5
       esbuild: 0.20.2
       postcss: 8.4.38
       rollup: 4.13.0
@@ -3580,7 +3580,7 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vitest@1.4.0(@types/node@20.12.2)(jsdom@24.0.0):
+  /vitest@1.4.0(@types/node@20.12.5)(jsdom@24.0.0):
     resolution: {integrity: sha512-gujzn0g7fmwf83/WzrDTnncZt2UiXP41mHuFYFrdwaLRVQ6JYQEiME2IfEjU3vcFL3VKa75XhI3lFgn+hfVsQw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -3605,7 +3605,7 @@ packages:
       jsdom:
         optional: true
     dependencies:
-      '@types/node': 20.12.2
+      '@types/node': 20.12.5
       '@vitest/expect': 1.4.0
       '@vitest/runner': 1.4.0
       '@vitest/snapshot': 1.4.0
@@ -3624,8 +3624,8 @@ packages:
       strip-literal: 2.0.0
       tinybench: 2.6.0
       tinypool: 0.8.2
-      vite: 5.2.7(@types/node@20.12.2)
-      vite-node: 1.4.0(@types/node@20.12.2)
+      vite: 5.2.8(@types/node@20.12.5)
+      vite-node: 1.4.0(@types/node@20.12.5)
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
       - less

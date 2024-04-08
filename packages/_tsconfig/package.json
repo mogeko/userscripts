@@ -6,6 +6,6 @@
     "fmt": "prettier --write ."
   },
   "devDependencies": {
-    "@tsconfig/recommended": "^1.0.5"
+    "@tsconfig/recommended": "^1.0.6"
   }
 }

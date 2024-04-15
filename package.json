@@ -27,6 +27,6 @@
     "@changesets/cli": "^2.27.1",
     "prettier": "^3.2.5",
     "turbo": "^1.13.2",
-    "typescript": "^5.4.4"
+    "typescript": "^5.4.5"
   }
 }

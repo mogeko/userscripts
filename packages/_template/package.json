@@ -29,10 +29,10 @@
     "fmt": "prettier --write ."
   },
   "devDependencies": {
-    "@types/node": "^20.12.7",
+    "@types/node": "^20.12.8",
     "tsconfig": "workspace:*",
     "typescript": "^5.4.5",
-    "vite": "^5.2.10",
+    "vite": "^5.2.11",
     "vite-plugin-monkey": "^3.5.2"
   }
 }

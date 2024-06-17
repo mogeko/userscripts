@@ -33,7 +33,7 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
-      - run: ppnpm install -rw --frozen-lockfile
+      - run: pnpm install -rw --frozen-lockfile
       - run: pnpm build
         env:
           BASE_URL: ${{ steps.pages.outputs.base_url }}

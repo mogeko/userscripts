@@ -14,6 +14,9 @@ importers:
       '@changesets/cli':
         specifier: ^2.27.5
         version: 2.27.5
+      '@types/node':
+        specifier: ^20.14.2
+        version: 20.14.2
       prettier:
         specifier: ^3.3.2
         version: 3.3.2
@@ -23,6 +26,9 @@ importers:
       typescript:
         specifier: ^5.4.5
         version: 5.4.5
+      vite-node:
+        specifier: ^1.6.0
+        version: 1.6.0(@types/node@20.14.2)
 
   packages/_template:
     devDependencies:
@@ -40,7 +46,7 @@ importers:
         version: 5.3.1(@types/node@20.14.2)
       vite-plugin-monkey:
         specifier: ^4.0.3
-        version: 4.0.3(vite@5.3.1)
+        version: 4.0.3(vite@5.3.1(@types/node@20.14.2))
 
   packages/_tsconfig:
     devDependencies:
@@ -64,7 +70,7 @@ importers:
         version: 5.3.1(@types/node@20.14.2)
       vite-plugin-monkey:
         specifier: ^4.0.3
-        version: 4.0.3(vite@5.3.1)
+        version: 4.0.3(vite@5.3.1(@types/node@20.14.2))
 
   packages/douban2rarbg:
     devDependencies:
@@ -76,7 +82,7 @@ importers:
         version: 20.14.2
       '@vitest/coverage-v8':
         specifier: ^1.6.0
-        version: 1.6.0(vitest@1.6.0)
+        version: 1.6.0(vitest@1.6.0(@types/node@20.14.2)(jsdom@24.1.0))
       jsdom:
         specifier: ^24.1.0
         version: 24.1.0
@@ -91,7 +97,7 @@ importers:
         version: 5.3.1(@types/node@20.14.2)
       vite-plugin-monkey:
         specifier: ^4.0.3
-        version: 4.0.3(vite@5.3.1)
+        version: 4.0.3(vite@5.3.1(@types/node@20.14.2))
       vitest:
         specifier: ^1.6.0
         version: 1.6.0(@types/node@20.14.2)(jsdom@24.1.0)
@@ -112,7 +118,7 @@ importers:
         version: 5.3.1(@types/node@20.14.2)
       vite-plugin-monkey:
         specifier: ^4.0.3
-        version: 4.0.3(vite@5.3.1)
+        version: 4.0.3(vite@5.3.1(@types/node@20.14.2))
 
   packages/exclude-dv:
     devDependencies:
@@ -130,7 +136,7 @@ importers:
         version: 5.3.1(@types/node@20.14.2)
       vite-plugin-monkey:
         specifier: ^4.0.3
-        version: 4.0.3(vite@5.3.1)
+        version: 4.0.3(vite@5.3.1(@types/node@20.14.2))
 
   packages/ghproxy-gist-raw:
     devDependencies:
@@ -148,7 +154,7 @@ importers:
         version: 5.3.1(@types/node@20.14.2)
       vite-plugin-monkey:
         specifier: ^4.0.3
-        version: 4.0.3(vite@5.3.1)
+        version: 4.0.3(vite@5.3.1(@types/node@20.14.2))
 
   packages/ghproxy-raw:
     devDependencies:
@@ -166,7 +172,7 @@ importers:
         version: 5.3.1(@types/node@20.14.2)
       vite-plugin-monkey:
         specifier: ^4.0.3
-        version: 4.0.3(vite@5.3.1)
+        version: 4.0.3(vite@5.3.1(@types/node@20.14.2))
 
   packages/ghproxy-releases:
     devDependencies:
@@ -184,7 +190,7 @@ importers:
         version: 5.3.1(@types/node@20.14.2)
       vite-plugin-monkey:
         specifier: ^4.0.3
-        version: 4.0.3(vite@5.3.1)
+        version: 4.0.3(vite@5.3.1(@types/node@20.14.2))
 
 packages:
 
@@ -2589,7 +2595,7 @@ snapshots:
 
   '@types/tough-cookie@4.0.2': {}
 
-  '@vitest/coverage-v8@1.6.0(vitest@1.6.0)':
+  '@vitest/coverage-v8@1.6.0(vitest@1.6.0(@types/node@20.14.2)(jsdom@24.1.0))':
     dependencies:
       '@ampproject/remapping': 2.2.1
       '@bcoe/v8-coverage': 0.2.3
@@ -4180,7 +4186,7 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-monkey@4.0.3(vite@5.3.1):
+  vite-plugin-monkey@4.0.3(vite@5.3.1(@types/node@20.14.2)):
     dependencies:
       acorn-walk: 8.3.2
       cross-spawn: 7.0.3
@@ -4191,20 +4197,20 @@ snapshots:
       open: 9.1.0
       picocolors: 1.0.1
       systemjs: 6.14.2
+    optionalDependencies:
       vite: 5.3.1(@types/node@20.14.2)
 
   vite@5.3.1(@types/node@20.14.2):
     dependencies:
-      '@types/node': 20.14.2
       esbuild: 0.21.5
       postcss: 8.4.38
       rollup: 4.13.0
     optionalDependencies:
+      '@types/node': 20.14.2
       fsevents: 2.3.3
 
   vitest@1.6.0(@types/node@20.14.2)(jsdom@24.1.0):
     dependencies:
-      '@types/node': 20.14.2
       '@vitest/expect': 1.6.0
       '@vitest/runner': 1.6.0
       '@vitest/snapshot': 1.6.0
@@ -4214,7 +4220,6 @@ snapshots:
       chai: 4.4.1
       debug: 4.3.4
       execa: 8.0.1
-      jsdom: 24.1.0
       local-pkg: 0.5.0
       magic-string: 0.30.8
       pathe: 1.1.1
@@ -4226,6 +4231,9 @@ snapshots:
       vite: 5.3.1(@types/node@20.14.2)
       vite-node: 1.6.0(@types/node@20.14.2)
       why-is-node-running: 2.2.2
+    optionalDependencies:
+      '@types/node': 20.14.2
+      jsdom: 24.1.0
     transitivePeerDependencies:
       - less
       - lightningcss

@@ -34,11 +34,11 @@
   },
   "devDependencies": {
     "@types/jsdom": "^21.1.7",
-    "@types/node": "^20.14.2",
+    "@types/node": "^20.14.8",
     "@vitest/coverage-v8": "^1.6.0",
     "jsdom": "^24.1.0",
     "tsconfig": "workspace:*",
-    "typescript": "^5.4.5",
+    "typescript": "^5.5.2",
     "vite": "^5.3.1",
     "vite-plugin-monkey": "^4.0.3",
     "vitest": "^1.6.0"

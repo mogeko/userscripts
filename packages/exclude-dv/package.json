@@ -30,8 +30,8 @@
     "fmt": "prettier --write ."
   },
   "devDependencies": {
+    "@mogeko/tsconfig": "^0.0.4",
     "@types/node": "^20.14.2",
-    "tsconfig": "workspace:*",
     "typescript": "^5.4.5",
     "vite": "^5.3.1",
     "vite-plugin-monkey": "^4.0.3"

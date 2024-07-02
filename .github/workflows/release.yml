@@ -44,7 +44,7 @@ jobs:
         with:
           commit: "chore(release): version packages"
           title: "chore(release): version packages"
-          version: node .github/changeset-version.cjs
+          version: pnpm vite-node .github/changeset-version.ts
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_ENV: production

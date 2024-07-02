@@ -1,6 +1,6 @@
 queue_rules:
   - name: dependabot
-    conditions:
+    queue_conditions:
       - "check-success=Build Userscript"
       - "check-success=Run Tests and Generate Coverage Report"
     batch_size: 10

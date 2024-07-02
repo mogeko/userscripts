@@ -1,7 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "tsconfig/vite.tsconfig.json",
+  "extends": "@mogeko/tsconfig/default.tsconfig.json",
   "compilerOptions": {
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "types": [
       "vite/client",
       "vite-plugin-monkey/dist/client",
@@ -10,6 +11,6 @@
     "paths": { "@/*": ["src/*"] },
     "baseUrl": "."
   },
-  "include": ["src", "*.config.ts"],
+  "include": ["src/**/*", "*.config.ts"],
   "exclude": ["node_modules"]
 }

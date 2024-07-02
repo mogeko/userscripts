@@ -1,5 +1,11 @@
 # douban2rarbg
 
+## 0.8.1
+
+### Patch Changes
+
+- [#115](https://github.com/mogeko/userscripts/pull/115) [`d25b182`](https://github.com/mogeko/userscripts/commit/d25b182ed3c45e51a7826e48486f9e9ad130f9eb) Thanks [@mogeko](https://github.com/mogeko)! - Set `@mogeko/tsconfig` to default `tsconfig.json`.
+
 ## 0.8.0
 
 ### Minor Changes

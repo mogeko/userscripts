@@ -1,6 +1,6 @@
 {
   "name": "ghproxy-gist-raw",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "private": true,
   "type": "module",
   "description": "通过代理为 GitHub Gist 的 Raw Assets 提供加速",

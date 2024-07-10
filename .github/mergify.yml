@@ -1,7 +1,7 @@
 queue_rules:
   - name: dependabot
     queue_conditions:
-      - "check-success=Build Userscript"
+      - "check-success=Build and Deploy to Vercel Preview"
       - "check-success=Run Tests and Generate Coverage Report"
     batch_size: 10
     batch_max_wait_time: 5min
@@ -20,7 +20,7 @@ pull_request_rules:
     conditions:
       - "author=dependabot[bot]"
       - "label=dependencies"
-      - "check-success=Build Userscript"
+      - "check-success=Build and Deploy to Vercel Preview"
       - "check-success=Run Tests and Generate Coverage Report"
     actions:
       queue:

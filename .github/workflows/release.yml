@@ -5,39 +5,40 @@ on:
     branches: [master]
   workflow_dispatch:
 
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
 permissions:
   contents: write
   pull-requests: write
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
 
 jobs:
   build:
-    name: Create PR or Deploy to Pages
+    name: Create PR or Deploy to Vercel Production
     runs-on: ubuntu-latest
-    outputs:
-      hasChangesets: ${{ steps.changesets.outputs.hasChangesets }}
+    environment:
+      name: production
+      url: ${{ steps.deployment.outputs.DEPLOYMENT_URL }}
+    env:
+      TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+      TURBO_TEAM: ${{ github.actor }}
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
     steps:
-      - uses: actions/checkout@v4
-      - name: Setup pnpm
+      - uses: actions/checkout@v4.1.7
+      - name: Set up pnpm
         uses: pnpm/action-setup@v4.0.0
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4.0.2
         with:
           node-version-file: package.json
           cache: "pnpm"
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
-      - run: pnpm install -rw --frozen-lockfile
-      - run: pnpm build
-        env:
-          BASE_URL: ${{ steps.pages.outputs.base_url }}
-          NODE_ENV: production
+      - run: pnpm install --global vercel@latest
+      - run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+      - run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+      - run: |
+          vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }} | \
+          xargs -I {} echo "DEPLOYMENT_URL={}" >> "${GITHUB_OUTPUT}"
+        id: deployment
       - name: Create Version PR or Deploy to Pages
         id: changesets
         uses: changesets/action@v1.4.7
@@ -48,20 +49,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_ENV: production
-      - name: Upload artifact
-        if: steps.changesets.outputs.hasChangesets == 'false'
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./release
-
-  deploy:
-    if: needs.build.outputs.hasChangesets == 'false'
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4

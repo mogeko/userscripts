@@ -1,10 +1,17 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import pkg from "../package.json";
+import { glob } from "glob";
 
-const releasePath = path.resolve(__dirname, "../release");
-const releaseFiles = await fs.readdir(releasePath);
-const baseURL = process.env.BASE_URL || "https://mogeko.github.io/userscripts";
+const baseURL = process.env["BASE_URL"] || "https://userscripts.mogeko.me";
+const releaseDir = path.resolve(__dirname, "../release");
+const releaseFiles = await glob("packages/*/dist/*.js", { ignore: "*/_*/**" });
+
+await fs.mkdir(releaseDir, { recursive: true });
+
+releaseFiles.forEach(async (file) => {
+  await fs.copyFile(file, path.resolve(releaseDir, path.basename(file)));
+});
 
 const meta = {
   name: pkg.name,
@@ -12,9 +19,9 @@ const meta = {
   homepage: pkg.homepage,
   author: pkg.author,
   license: pkg.license,
-  resource: releaseFiles
-    .filter((file) => !file.endsWith("index.json"))
-    .map((file) => [baseURL, file].join("/")),
+  resource: releaseFiles.map((file) => {
+    return [baseURL, path.basename(file)].join("/");
+  }),
   packer: "https://www.npmjs.com/package/vite",
   env: {
     NODE_VERSION: process.version,

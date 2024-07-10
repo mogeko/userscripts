@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import monkey from "vite-plugin-monkey";
 
-const baseURL = process.env.BASE_URL || "https://mogeko.github.io/userscripts";
+const base = process.env["BASE_URL"] || "https://mogeko.github.io/userscripts";
 
 export default defineConfig({
   build: { outDir: "../../release", emptyOutDir: false },
@@ -14,8 +14,8 @@ export default defineConfig({
         name: "Exclude DV",
         namespace: "https://github.com/mogeko/userscripts",
         icon: "https://besticon.herokuapp.com/icon?size=80..120..200&url=rarbg.to",
-        downloadURL: [baseURL, "exclude-dv.user.js"].join("/"),
-        updateURL: [baseURL, "exclude-dv.meta.js"].join("/"),
+        downloadURL: [base, "exclude-dv.user.js"].join("/"),
+        updateURL: [base, "exclude-dv.meta.js"].join("/"),
         match: [
           "https://rarbg.to/torrents*",
           "https://rarbg.to/top10",

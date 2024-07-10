@@ -1,5 +1,11 @@
 # better-steam-rating
 
+## 0.2.5
+
+### Patch Changes
+
+- [#118](https://github.com/mogeko/userscripts/pull/118) [`e9e2c4a`](https://github.com/mogeko/userscripts/commit/e9e2c4ae717649ebdd7bddb1024049a5ff2661d7) Thanks [@mogeko](https://github.com/mogeko)! - Deploy to Vercel.
+
 ## 0.2.4
 
 ### Patch Changes

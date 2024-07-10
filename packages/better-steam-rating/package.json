@@ -1,6 +1,6 @@
 {
   "name": "better-steam-rating",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "private": true,
   "type": "module",
   "description": "优化 Steam 的评分系统",

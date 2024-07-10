@@ -3,11 +3,11 @@
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": ["../../release/**"],
+      "outputs": ["dist/**"],
       "env": ["BASE_URL"]
     },
-    "test": { "dependsOn": ["^build"], "outputs": [] },
-    "cov": { "dependsOn": ["^build"], "outputs": [] },
+    "test": { "dependsOn": ["^build"], "inputs": ["$TURBO_DEFAULT$", "tests"] },
+    "cov": { "dependsOn": ["^build"], "inputs": ["$TURBO_DEFAULT$", "tests"] },
     "lint": { "outputs": [] },
     "fmt": { "outputs": [], "cache": false }
   },

@@ -15,10 +15,10 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "turbo run build && pnpm run meta",
+    "build": "turbo run build && pnpm run pkg",
     "test": "turbo run test",
     "cov": "turbo run cov",
-    "meta": "vite-node ./scripts/meta.ts",
+    "pkg": "vite-node ./scripts/pack.ts",
     "lint": "turbo run lint",
     "fmt": "turbo run fmt",
     "changeset": "changeset"
@@ -27,6 +27,7 @@
     "@changesets/changelog-github": "^0.5.0",
     "@changesets/cli": "^2.27.7",
     "@types/node": "^20.14.10",
+    "glob": "^11.0.0",
     "prettier": "^3.3.2",
     "turbo": "^2.0.6",
     "typescript": "^5.5.3",

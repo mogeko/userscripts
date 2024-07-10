@@ -4,7 +4,6 @@ import monkey from "vite-plugin-monkey";
 const base = process.env["BASE_URL"] || "https://mogeko.github.io/userscripts";
 
 export default defineConfig({
-  build: { outDir: "../../release", emptyOutDir: false },
   plugins: [
     monkey({
       entry: "./src/main.ts",

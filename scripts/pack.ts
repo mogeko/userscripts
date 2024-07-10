@@ -3,7 +3,7 @@ import path from "node:path";
 import pkg from "../package.json";
 import { glob } from "glob";
 
-const base = process.env["BASE_URL"] || "https://mogeko.github.io/userscripts";
+const baseURL = process.env["BASE_URL"] || "https://userscripts.mogeko.me";
 const releaseDir = path.resolve(__dirname, "../release");
 const releaseFiles = await glob("packages/*/dist/*.js", { ignore: "*/_*/**" });
 
@@ -20,7 +20,7 @@ const meta = {
   author: pkg.author,
   license: pkg.license,
   resource: releaseFiles.map((file) => {
-    return [base, path.basename(file)].join("/");
+    return [baseURL, path.basename(file)].join("/");
   }),
   packer: "https://www.npmjs.com/package/vite",
   env: {

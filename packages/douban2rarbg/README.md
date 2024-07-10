@@ -12,7 +12,7 @@ Depends on [Tampermonkey](https://www.tampermonkey.net/) or [Greasemonkey](https
 
 ## Install
 
-Click [here](https://mogeko.github.io/userscripts/douban2rarbg.user.js) to install.
+Click [here](https://userscripts.mogeko.me/douban2rarbg.user.js) to install.
 
 View this UserScript in [Greasy Fork](https://greasyfork.org/zh-CN/scripts/427181-douban2rarbg).
 

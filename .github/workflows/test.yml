@@ -11,8 +11,7 @@ jobs:
     name: Run Tests and Generate Coverage Report
     runs-on: ubuntu-latest
     env:
-      TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
-      TURBO_TEAM: ${{ github.actor }}
+      TURBO_FORCE: true
     steps:
       - uses: actions/checkout@v4.1.7
       - name: Set up pnpm

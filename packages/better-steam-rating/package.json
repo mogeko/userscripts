@@ -30,7 +30,7 @@
     "fmt": "prettier --write ."
   },
   "devDependencies": {
-    "@types/node": "^22.5.0",
+    "@types/node": "^22.5.2",
     "typescript": "^5.5.4",
     "vite": "^5.4.2",
     "vite-plugin-monkey": "^4.0.6"

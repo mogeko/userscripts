@@ -16,14 +16,14 @@ const META_DATA = {
   },
 };
 
-(function () {
+(() => {
   const metaRoot = document.querySelector("#info");
   const imdb = metaRoot?.textContent?.match(/tt[0-9]{4,}/)?.[0];
   const doubanID = document.location.toString().split("/")[4];
 
   if (!imdb || !doubanID) return;
 
-  Object.entries(META_DATA).forEach(([key, sites]) => {
+  for (const [key, sites] of Object.entries(META_DATA)) {
     const metaNode = document.createElement("span");
     const plNode = document.createElement("span");
     const attrsNode = document.createElement("span");
@@ -61,7 +61,7 @@ const META_DATA = {
 
     metaRoot.appendChild(metaNode);
     metaRoot.appendChild(br);
-  });
+  }
 })();
 
-export {};
+export type {};

@@ -12,4 +12,4 @@ document.addEventListener("pjax:success", () => {
   agentRaw(PROXY_URL);
 });
 
-export {};
+export type {};

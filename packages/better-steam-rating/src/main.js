@@ -13,9 +13,10 @@ function hideEle(item) {
 
 function checkFn() {
   const minRealNum = 100;
-  const items = document.querySelectorAll(".responsive_search_name_combined");
 
-  items.forEach((item2) => {
+  for (const item2 of document.querySelectorAll(
+    ".responsive_search_name_combined",
+  )) {
     if (item2.dataset.isCheck) return;
 
     let days = 0;
@@ -36,7 +37,7 @@ function checkFn() {
         gameDate.setDate(dateArr[2]);
 
         days = (new Date().getTime() - gameDate.getTime()) / 86400000;
-        days = parseInt(days);
+        days = Number.parseInt(days);
       }
     }
 
@@ -63,9 +64,9 @@ function checkFn() {
 
     const num = lastArr[0].replace(/\,/g, "");
     const rate = lastArr[2].replace("%", "");
-    const realNum = parseInt((num * rate) / 100);
+    const realNum = Number.parseInt((num * rate) / 100);
 
-    if (isNaN(realNum)) {
+    if (Number.isNaN(realNum)) {
       console.log(content);
       return;
     }
@@ -77,7 +78,7 @@ function checkFn() {
       realRate = realRate > 10 ? realRate.toFixed(0) : realRate.toFixed(1);
     }
 
-    const innerHtml = `<span style="padding-left: 0.5em;width: 2em;display: inline-block;">${rate}</span><span style="width: 4.5em;display:inline-block;">${parseInt(
+    const innerHtml = `<span style="padding-left: 0.5em;width: 2em;display: inline-block;">${rate}</span><span style="width: 4.5em;display:inline-block;">${Number.parseInt(
       (num * rate) / 100,
     )}</span><span style="width: 3em;display:inline-block;">${days}</span><span style="width:3em;display:inline-block;">${realRate}</span>`;
 
@@ -93,7 +94,7 @@ function checkFn() {
     if (realNum && realNum < minRealNum && realRate !== "-" && realRate < 0.1) {
       hideEle(item);
     }
-  });
+  }
 }
 
 setInterval(() => {

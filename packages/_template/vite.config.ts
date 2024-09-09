@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import monkey from "vite-plugin-monkey";
 
-const baseURL = process.env["BASE_URL"] || "https://userscripts.mogeko.me";
+const baseURL = process.env.BASE_URL || "https://userscripts.mogeko.me";
 
 export default defineConfig({
   plugins: [

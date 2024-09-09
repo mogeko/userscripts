@@ -22,5 +22,5 @@ jobs:
           node-version-file: package.json
           cache: "pnpm"
       - run: pnpm install -rw --frozen-lockfile
-      - run: pnpm lint
-      - run: pnpm cov
+      - run: pnpm biome ci --reporter=github
+      - run: pnpm run cov

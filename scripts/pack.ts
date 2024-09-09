@@ -1,17 +1,17 @@
 import fs from "node:fs/promises";
 import path from "node:path";
-import pkg from "../package.json";
 import { glob } from "glob";
+import pkg from "../package.json";
 
-const baseURL = process.env["BASE_URL"] || "https://userscripts.mogeko.me";
+const baseURL = process.env.BASE_URL || "https://userscripts.mogeko.me";
 const releaseDir = path.resolve(__dirname, "../release");
 const releaseFiles = await glob("packages/*/dist/*.js", { ignore: "*/_*/**" });
 
 await fs.mkdir(releaseDir, { recursive: true });
 
-releaseFiles.forEach(async (file) => {
+for (const file of releaseFiles) {
   await fs.copyFile(file, path.resolve(releaseDir, path.basename(file)));
-});
+}
 
 const meta = {
   name: pkg.name,
@@ -33,5 +33,5 @@ const meta = {
 
 await fs.writeFile(
   path.resolve(__dirname, "../release/index.json"),
-  JSON.stringify(meta, null, 2)
+  JSON.stringify(meta, null, 2),
 );

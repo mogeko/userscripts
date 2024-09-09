@@ -18,11 +18,7 @@
     "url": "https://github.com/mogeko/userscripts/issues",
     "email": "zhengjunyi@live.com"
   },
-  "keywords": [
-    "userscript",
-    "tampermonkey",
-    "rarbg"
-  ],
+  "keywords": ["userscript", "tampermonkey", "rarbg"],
   "license": "MIT",
   "scripts": {
     "build": "vite build"

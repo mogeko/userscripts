@@ -18,19 +18,12 @@
     "url": "https://github.com/mogeko/userscripts/issues",
     "email": "zhengjunyi@live.com"
   },
-  "keywords": [
-    "userscript",
-    "tampermonkey",
-    "douban",
-    "rarbg"
-  ],
+  "keywords": ["userscript", "tampermonkey", "douban", "rarbg"],
   "license": "MIT",
   "scripts": {
     "build": "vite build",
     "test": "vitest run",
-    "cov": "vitest run --coverage",
-    "lint": "prettier --check .",
-    "fmt": "prettier --write ."
+    "cov": "vitest run --coverage"
   },
   "devDependencies": {
     "@mogeko/tsconfig": "^0.0.4",

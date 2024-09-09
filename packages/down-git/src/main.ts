@@ -18,11 +18,11 @@ function downloader(localUrl: string) {
 
   if (flag === "tree") {
     return `${DOWN_GIT}/#/home?url=${localUrl}`;
-  } else if (flag === "blob") {
-    return `${JSDELIVR}/gh/${user}/${repo}@${branch}/${rest.join("/")}`;
-  } else {
-    return localUrl;
   }
+  if (flag === "blob") {
+    return `${JSDELIVR}/gh/${user}/${repo}@${branch}/${rest.join("/")}`;
+  }
+  return localUrl;
 }
 
 function setButton(urlNode: HTMLAnchorElement) {
@@ -40,14 +40,14 @@ function setButton(urlNode: HTMLAnchorElement) {
 }
 
 requestIdleCallback(() => {
-  document.querySelectorAll("div.Box-row").forEach((node) => {
+  for (const node of document.querySelectorAll("div.Box-row")) {
     const urlNode = node.querySelector("a");
     const anchorNode = node.querySelector("div.text-right");
 
     if (!urlNode || urlNode.querySelector("span")) return;
 
     node.insertBefore(setButton(urlNode), anchorNode);
-  });
+  }
 });
 
-export {};
+export type {};

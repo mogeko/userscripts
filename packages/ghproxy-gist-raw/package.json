@@ -18,17 +18,10 @@
     "url": "https://github.com/mogeko/userscripts/issues",
     "email": "zhengjunyi@live.com"
   },
-  "keywords": [
-    "userscript",
-    "tampermonkey",
-    "github",
-    "gist"
-  ],
+  "keywords": ["userscript", "tampermonkey", "github", "gist"],
   "license": "MIT",
   "scripts": {
-    "build": "vite build",
-    "lint": "prettier --check .",
-    "fmt": "prettier --write ."
+    "build": "vite build"
   },
   "devDependencies": {
     "@mogeko/tsconfig": "^0.0.4",

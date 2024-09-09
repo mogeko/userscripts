@@ -7,9 +7,7 @@
       "env": ["BASE_URL"]
     },
     "test": { "dependsOn": ["^build"], "inputs": ["$TURBO_DEFAULT$", "tests"] },
-    "cov": { "dependsOn": ["^build"], "inputs": ["$TURBO_DEFAULT$", "tests"] },
-    "lint": { "outputs": [] },
-    "fmt": { "outputs": [], "cache": false }
+    "cov": { "dependsOn": ["^build"], "inputs": ["$TURBO_DEFAULT$", "tests"] }
   },
   "globalEnv": ["NODE_ENV", "GITHUB_TOKEN"]
 }

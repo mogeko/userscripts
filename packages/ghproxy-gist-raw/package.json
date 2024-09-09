@@ -1,6 +1,6 @@
 {
   "name": "ghproxy-gist-raw",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "private": true,
   "type": "module",
   "description": "通过代理为 GitHub Gist 的 Raw Assets 提供加速",
@@ -18,7 +18,12 @@
     "url": "https://github.com/mogeko/userscripts/issues",
     "email": "zhengjunyi@live.com"
   },
-  "keywords": ["userscript", "tampermonkey", "github", "gist"],
+  "keywords": [
+    "userscript",
+    "tampermonkey",
+    "github",
+    "gist"
+  ],
   "license": "MIT",
   "scripts": {
     "build": "vite build"

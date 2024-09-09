@@ -1,6 +1,6 @@
 {
   "name": "douban2rarbg",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "private": true,
   "type": "module",
   "description": "Add direct links to RARBG & TPB from Douban.",
@@ -18,7 +18,12 @@
     "url": "https://github.com/mogeko/userscripts/issues",
     "email": "zhengjunyi@live.com"
   },
-  "keywords": ["userscript", "tampermonkey", "douban", "rarbg"],
+  "keywords": [
+    "userscript",
+    "tampermonkey",
+    "douban",
+    "rarbg"
+  ],
   "license": "MIT",
   "scripts": {
     "build": "vite build",

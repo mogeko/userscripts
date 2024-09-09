@@ -1,6 +1,6 @@
 {
   "name": "down-git",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "private": true,
   "type": "module",
   "description": "Create GitHub Resource Download Link.",
@@ -18,7 +18,11 @@
     "url": "https://github.com/mogeko/userscripts/issues",
     "email": "zhengjunyi@live.com"
   },
-  "keywords": ["userscript", "tampermonkey", "github"],
+  "keywords": [
+    "userscript",
+    "tampermonkey",
+    "github"
+  ],
   "license": "MIT",
   "scripts": {
     "build": "vite build"

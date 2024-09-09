@@ -1,5 +1,11 @@
 # ghproxy-raw
 
+## 0.1.9
+
+### Patch Changes
+
+- [#131](https://github.com/mogeko/userscripts/pull/131) [`1627f9b`](https://github.com/mogeko/userscripts/commit/1627f9b0925178c48efcec0724c80f87c3de664a) Thanks [@mogeko](https://github.com/mogeko)! - Use [`biome`](https://biomejs.dev) instead of [`prettier`](https://prettier.io) to format the code.
+
 ## 0.1.8
 
 ### Patch Changes

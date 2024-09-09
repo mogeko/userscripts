@@ -1,6 +1,6 @@
 {
   "name": "template",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "private": true,
   "type": "module",
   "description": "There is a template to create UserScript.",
@@ -18,7 +18,10 @@
     "url": "https://github.com/mogeko/userscripts/issues",
     "email": "zhengjunyi@live.com"
   },
-  "keywords": ["userscript", "tampermonkey"],
+  "keywords": [
+    "userscript",
+    "tampermonkey"
+  ],
   "license": "MIT",
   "scripts": {
     "build": "vite build"

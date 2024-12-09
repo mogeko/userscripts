@@ -27,7 +27,7 @@
     "@mogeko/tsconfig": "^0.0.6",
     "@types/node": "^22.10.1",
     "typescript": "^5.7.2",
-    "vite": "^6.0.1",
+    "vite": "^6.0.3",
     "vite-plugin-monkey": "^4.0.6"
   }
 }

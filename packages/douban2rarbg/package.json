@@ -28,12 +28,12 @@
   "devDependencies": {
     "@mogeko/tsconfig": "^0.0.6",
     "@types/jsdom": "^21.1.7",
-    "@types/node": "^22.10.2",
+    "@types/node": "^22.10.5",
     "@vitest/coverage-v8": "^2.1.8",
     "jsdom": "^25.0.1",
     "typescript": "^5.7.2",
-    "vite": "^6.0.6",
-    "vite-plugin-monkey": "^5.0.3",
+    "vite": "^6.0.7",
+    "vite-plugin-monkey": "^5.0.4",
     "vitest": "^2.1.8"
   }
 }

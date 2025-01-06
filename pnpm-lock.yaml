@@ -18,8 +18,8 @@ importers:
         specifier: ^2.27.11
         version: 2.27.11
       '@types/node':
-        specifier: ^22.10.2
-        version: 22.10.2
+        specifier: ^22.10.5
+        version: 22.10.5
       glob:
         specifier: ^11.0.0
         version: 11.0.0
@@ -31,7 +31,7 @@ importers:
         version: 5.7.2
       vite-node:
         specifier: ^2.1.8
-        version: 2.1.8(@types/node@22.10.2)
+        version: 2.1.8(@types/node@22.10.5)
 
   packages/_template:
     devDependencies:
@@ -39,32 +39,32 @@ importers:
         specifier: ^0.0.6
         version: 0.0.6
       '@types/node':
-        specifier: ^22.10.2
-        version: 22.10.2
+        specifier: ^22.10.5
+        version: 22.10.5
       typescript:
         specifier: ^5.7.2
         version: 5.7.2
       vite:
-        specifier: ^6.0.6
-        version: 6.0.6(@types/node@22.10.2)
+        specifier: ^6.0.7
+        version: 6.0.7(@types/node@22.10.5)
       vite-plugin-monkey:
-        specifier: ^5.0.3
-        version: 5.0.3(vite@6.0.6(@types/node@22.10.2))
+        specifier: ^5.0.4
+        version: 5.0.4(vite@6.0.7(@types/node@22.10.5))
 
   packages/better-steam-rating:
     devDependencies:
       '@types/node':
-        specifier: ^22.10.2
-        version: 22.10.2
+        specifier: ^22.10.5
+        version: 22.10.5
       typescript:
         specifier: ^5.7.2
         version: 5.7.2
       vite:
-        specifier: ^6.0.6
-        version: 6.0.6(@types/node@22.10.2)
+        specifier: ^6.0.7
+        version: 6.0.7(@types/node@22.10.5)
       vite-plugin-monkey:
-        specifier: ^5.0.3
-        version: 5.0.3(vite@6.0.6(@types/node@22.10.2))
+        specifier: ^5.0.4
+        version: 5.0.4(vite@6.0.7(@types/node@22.10.5))
 
   packages/douban2rarbg:
     devDependencies:
@@ -75,11 +75,11 @@ importers:
         specifier: ^21.1.7
         version: 21.1.7
       '@types/node':
-        specifier: ^22.10.2
-        version: 22.10.2
+        specifier: ^22.10.5
+        version: 22.10.5
       '@vitest/coverage-v8':
         specifier: ^2.1.8
-        version: 2.1.8(vitest@2.1.8(@types/node@22.10.2)(jsdom@25.0.1))
+        version: 2.1.8(vitest@2.1.8(@types/node@22.10.5)(jsdom@25.0.1))
       jsdom:
         specifier: ^25.0.1
         version: 25.0.1
@@ -87,14 +87,14 @@ importers:
         specifier: ^5.7.2
         version: 5.7.2
       vite:
-        specifier: ^6.0.6
-        version: 6.0.6(@types/node@22.10.2)
+        specifier: ^6.0.7
+        version: 6.0.7(@types/node@22.10.5)
       vite-plugin-monkey:
-        specifier: ^5.0.3
-        version: 5.0.3(vite@6.0.6(@types/node@22.10.2))
+        specifier: ^5.0.4
+        version: 5.0.4(vite@6.0.7(@types/node@22.10.5))
       vitest:
         specifier: ^2.1.8
-        version: 2.1.8(@types/node@22.10.2)(jsdom@25.0.1)
+        version: 2.1.8(@types/node@22.10.5)(jsdom@25.0.1)
 
   packages/down-git:
     devDependencies:
@@ -102,17 +102,17 @@ importers:
         specifier: ^0.0.6
         version: 0.0.6
       '@types/node':
-        specifier: ^22.10.2
-        version: 22.10.2
+        specifier: ^22.10.5
+        version: 22.10.5
       typescript:
         specifier: ^5.7.2
         version: 5.7.2
       vite:
-        specifier: ^6.0.6
-        version: 6.0.6(@types/node@22.10.2)
+        specifier: ^6.0.7
+        version: 6.0.7(@types/node@22.10.5)
       vite-plugin-monkey:
-        specifier: ^5.0.3
-        version: 5.0.3(vite@6.0.6(@types/node@22.10.2))
+        specifier: ^5.0.4
+        version: 5.0.4(vite@6.0.7(@types/node@22.10.5))
 
   packages/exclude-dv:
     devDependencies:
@@ -120,17 +120,17 @@ importers:
         specifier: ^0.0.6
         version: 0.0.6
       '@types/node':
-        specifier: ^22.10.2
-        version: 22.10.2
+        specifier: ^22.10.5
+        version: 22.10.5
       typescript:
         specifier: ^5.7.2
         version: 5.7.2
       vite:
-        specifier: ^6.0.6
-        version: 6.0.6(@types/node@22.10.2)
+        specifier: ^6.0.7
+        version: 6.0.7(@types/node@22.10.5)
       vite-plugin-monkey:
-        specifier: ^5.0.3
-        version: 5.0.3(vite@6.0.6(@types/node@22.10.2))
+        specifier: ^5.0.4
+        version: 5.0.4(vite@6.0.7(@types/node@22.10.5))
 
   packages/ghproxy-gist-raw:
     devDependencies:
@@ -138,17 +138,17 @@ importers:
         specifier: ^0.0.6
         version: 0.0.6
       '@types/node':
-        specifier: ^22.10.2
-        version: 22.10.2
+        specifier: ^22.10.5
+        version: 22.10.5
       typescript:
         specifier: ^5.7.2
         version: 5.7.2
       vite:
-        specifier: ^6.0.6
-        version: 6.0.6(@types/node@22.10.2)
+        specifier: ^6.0.7
+        version: 6.0.7(@types/node@22.10.5)
       vite-plugin-monkey:
-        specifier: ^5.0.3
-        version: 5.0.3(vite@6.0.6(@types/node@22.10.2))
+        specifier: ^5.0.4
+        version: 5.0.4(vite@6.0.7(@types/node@22.10.5))
 
   packages/ghproxy-raw:
     devDependencies:
@@ -156,17 +156,17 @@ importers:
         specifier: ^0.0.6
         version: 0.0.6
       '@types/node':
-        specifier: ^22.10.2
-        version: 22.10.2
+        specifier: ^22.10.5
+        version: 22.10.5
       typescript:
         specifier: ^5.7.2
         version: 5.7.2
       vite:
-        specifier: ^6.0.6
-        version: 6.0.6(@types/node@22.10.2)
+        specifier: ^6.0.7
+        version: 6.0.7(@types/node@22.10.5)
       vite-plugin-monkey:
-        specifier: ^5.0.3
-        version: 5.0.3(vite@6.0.6(@types/node@22.10.2))
+        specifier: ^5.0.4
+        version: 5.0.4(vite@6.0.7(@types/node@22.10.5))
 
   packages/ghproxy-releases:
     devDependencies:
@@ -174,17 +174,17 @@ importers:
         specifier: ^0.0.6
         version: 0.0.6
       '@types/node':
-        specifier: ^22.10.2
-        version: 22.10.2
+        specifier: ^22.10.5
+        version: 22.10.5
       typescript:
         specifier: ^5.7.2
         version: 5.7.2
       vite:
-        specifier: ^6.0.6
-        version: 6.0.6(@types/node@22.10.2)
+        specifier: ^6.0.7
+        version: 6.0.7(@types/node@22.10.5)
       vite-plugin-monkey:
-        specifier: ^5.0.3
-        version: 5.0.3(vite@6.0.6(@types/node@22.10.2))
+        specifier: ^5.0.4
+        version: 5.0.4(vite@6.0.7(@types/node@22.10.5))
 
 packages:
 
@@ -776,8 +776,8 @@ packages:
   '@types/node@12.20.55':
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
 
-  '@types/node@22.10.2':
-    resolution: {integrity: sha512-Xxr6BBRCAOQixvonOye19wnzyDiUtTeqldOOmj3CkeblonbccA12PFwlufvRdrpjXxqnmUaeiU5EOA+7s5diUQ==}
+  '@types/node@22.10.5':
+    resolution: {integrity: sha512-F8Q+SeGimwOo86fiovQh8qiXfFEh2/ocYv7tU5pJ3EXMSSxk1Joj5wefpFK2fHTf/N6HKGSxIDBT9f3gCxXPkQ==}
 
   '@types/tough-cookie@4.0.2':
     resolution: {integrity: sha512-Q5vtl1W5ue16D+nIaW8JWebSSraJVlK+EthKn7e7UcD4KWsaSJ8BqGPXNaPghgtcn/fhvrN17Tv8ksUsQpiplw==}
@@ -1605,8 +1605,8 @@ packages:
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
 
-  vite-plugin-monkey@5.0.3:
-    resolution: {integrity: sha512-GCU+x4MWow4jxapSmyXeACVeRxXt4uYynsqJ5l6UHWg8pfh22LbliWoL44yF92PL1D9PslwM4qT83zg0WeoKcQ==}
+  vite-plugin-monkey@5.0.4:
+    resolution: {integrity: sha512-8Iw3B914TulOo0gBRFNAifCsRW2nMbIj8zfME7iToIWw2e+sWnZKAsYOkgBqGnC2RwHVWxeUMxzTq8NhU6h4pg==}
     peerDependencies:
       vite: ^5.4.11 || ^6.0.0
     peerDependenciesMeta:
@@ -1644,8 +1644,8 @@ packages:
       terser:
         optional: true
 
-  vite@6.0.6:
-    resolution: {integrity: sha512-NSjmUuckPmDU18bHz7QZ+bTYhRR0iA72cs2QAxCqDpafJ0S6qetco0LB3WW2OxlMHS0JmAv+yZ/R3uPmMyGTjQ==}
+  vite@6.0.7:
+    resolution: {integrity: sha512-RDt8r/7qx9940f8FcOIAH9PTViRrghKaK2K1jY3RaAURrEUbm9Du1mJ72G+jlhtG3WwodnfzY8ORQZbBavZEAQ==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
     peerDependencies:
@@ -2260,19 +2260,19 @@ snapshots:
 
   '@types/jsdom@21.1.7':
     dependencies:
-      '@types/node': 22.10.2
+      '@types/node': 22.10.5
       '@types/tough-cookie': 4.0.2
       parse5: 7.1.2
 
   '@types/node@12.20.55': {}
 
-  '@types/node@22.10.2':
+  '@types/node@22.10.5':
     dependencies:
       undici-types: 6.20.0
 
   '@types/tough-cookie@4.0.2': {}
 
-  '@vitest/coverage-v8@2.1.8(vitest@2.1.8(@types/node@22.10.2)(jsdom@25.0.1))':
+  '@vitest/coverage-v8@2.1.8(vitest@2.1.8(@types/node@22.10.5)(jsdom@25.0.1))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@bcoe/v8-coverage': 0.2.3
@@ -2286,7 +2286,7 @@ snapshots:
       std-env: 3.8.0
       test-exclude: 7.0.1
       tinyrainbow: 1.2.0
-      vitest: 2.1.8(@types/node@22.10.2)(jsdom@25.0.1)
+      vitest: 2.1.8(@types/node@22.10.5)(jsdom@25.0.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -2297,13 +2297,13 @@ snapshots:
       chai: 5.1.2
       tinyrainbow: 1.2.0
 
-  '@vitest/mocker@2.1.8(vite@5.4.11(@types/node@22.10.2))':
+  '@vitest/mocker@2.1.8(vite@5.4.11(@types/node@22.10.5))':
     dependencies:
       '@vitest/spy': 2.1.8
       estree-walker: 3.0.3
       magic-string: 0.30.15
     optionalDependencies:
-      vite: 5.4.11(@types/node@22.10.2)
+      vite: 5.4.11(@types/node@22.10.5)
 
   '@vitest/pretty-format@2.1.8':
     dependencies:
@@ -3102,13 +3102,13 @@ snapshots:
 
   universalify@0.1.2: {}
 
-  vite-node@2.1.8(@types/node@22.10.2):
+  vite-node@2.1.8(@types/node@22.10.5):
     dependencies:
       cac: 6.7.14
       debug: 4.4.0
       es-module-lexer: 1.5.4
       pathe: 1.1.2
-      vite: 5.4.11(@types/node@22.10.2)
+      vite: 5.4.11(@types/node@22.10.5)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -3120,7 +3120,7 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-monkey@5.0.3(vite@6.0.6(@types/node@22.10.2)):
+  vite-plugin-monkey@5.0.4(vite@6.0.7(@types/node@22.10.5)):
     dependencies:
       acorn-walk: 8.3.4
       cross-spawn: 7.0.6
@@ -3132,30 +3132,30 @@ snapshots:
       picocolors: 1.1.1
       systemjs: 6.15.1
     optionalDependencies:
-      vite: 6.0.6(@types/node@22.10.2)
+      vite: 6.0.7(@types/node@22.10.5)
 
-  vite@5.4.11(@types/node@22.10.2):
+  vite@5.4.11(@types/node@22.10.5):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.4.49
       rollup: 4.28.1
     optionalDependencies:
-      '@types/node': 22.10.2
+      '@types/node': 22.10.5
       fsevents: 2.3.3
 
-  vite@6.0.6(@types/node@22.10.2):
+  vite@6.0.7(@types/node@22.10.5):
     dependencies:
       esbuild: 0.24.2
       postcss: 8.4.49
       rollup: 4.28.1
     optionalDependencies:
-      '@types/node': 22.10.2
+      '@types/node': 22.10.5
       fsevents: 2.3.3
 
-  vitest@2.1.8(@types/node@22.10.2)(jsdom@25.0.1):
+  vitest@2.1.8(@types/node@22.10.5)(jsdom@25.0.1):
     dependencies:
       '@vitest/expect': 2.1.8
-      '@vitest/mocker': 2.1.8(vite@5.4.11(@types/node@22.10.2))
+      '@vitest/mocker': 2.1.8(vite@5.4.11(@types/node@22.10.5))
       '@vitest/pretty-format': 2.1.8
       '@vitest/runner': 2.1.8
       '@vitest/snapshot': 2.1.8
@@ -3171,11 +3171,11 @@ snapshots:
       tinyexec: 0.3.1
       tinypool: 1.0.1
       tinyrainbow: 1.2.0
-      vite: 5.4.11(@types/node@22.10.2)
-      vite-node: 2.1.8(@types/node@22.10.2)
+      vite: 5.4.11(@types/node@22.10.5)
+      vite-node: 2.1.8(@types/node@22.10.5)
       why-is-node-running: 2.3.0
     optionalDependencies:
-      '@types/node': 22.10.2
+      '@types/node': 22.10.5
       jsdom: 25.0.1
     transitivePeerDependencies:
       - less

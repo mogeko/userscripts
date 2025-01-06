@@ -24,9 +24,9 @@
     "build": "vite build"
   },
   "devDependencies": {
-    "@types/node": "^22.10.2",
+    "@types/node": "^22.10.5",
     "typescript": "^5.7.2",
-    "vite": "^6.0.6",
-    "vite-plugin-monkey": "^5.0.3"
+    "vite": "^6.0.7",
+    "vite-plugin-monkey": "^5.0.4"
   }
 }

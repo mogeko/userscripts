@@ -41,7 +41,7 @@ jobs:
         id: deployment
       - name: Create Version PR or Deploy to Pages
         id: changesets
-        uses: changesets/action@v1.4.9
+        uses: changesets/action@v1.4.10
         with:
           commit: "chore(release): version packages"
           title: "chore(release): version packages"

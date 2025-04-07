@@ -24,9 +24,9 @@
     "build": "vite build"
   },
   "devDependencies": {
-    "@mogeko/tsconfig": "^0.0.6",
-    "@types/node": "^22.13.14",
-    "typescript": "^5.8.2",
+    "@mogeko/tsconfig": "^0.0.7",
+    "@types/node": "^22.14.0",
+    "typescript": "^5.8.3",
     "vite": "^6.2.5",
     "vite-plugin-monkey": "^5.0.8"
   }

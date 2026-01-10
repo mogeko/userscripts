@@ -20,18 +20,11 @@ jobs:
       VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
       VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
     steps:
-      - uses: actions/checkout@v6.0.1
-      - name: Set up pnpm
-        uses: pnpm/action-setup@v4.2.0
-      - name: Set up Node.js
-        uses: actions/setup-node@v6.1.0
-        with:
-          node-version-file: package.json
-          cache: "pnpm"
-      - run: pnpm install --global vercel@latest
-      - run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
-      - run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
+      - uses: actions/checkout@v4.1.7
+      - uses: oven-sh/setup-bun@v2.1.0
+      - run: bunx vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
+      - run: bunx vercel build --token=${{ secrets.VERCEL_TOKEN }}
       - run: |
-          vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }} | \
+          bunx vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }} | \
           xargs -I {} echo "DEPLOYMENT_URL={}" >> "${GITHUB_OUTPUT}"
         id: deployment

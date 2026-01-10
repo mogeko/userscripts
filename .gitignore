@@ -21,6 +21,7 @@ lib-cov
 # Coverage directory used by tools like istanbul
 coverage
 *.lcov
+test-report.junit.xml
 
 # nyc test coverage
 .nyc_output
@@ -111,3 +112,4 @@ release/
 
 # Vercel build output
 .vercel
+.env*.local

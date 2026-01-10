@@ -1,16 +1,18 @@
-import fs from "node:fs/promises";
-import path from "node:path";
-import { glob } from "glob";
+import { copyFile, mkdir } from "node:fs/promises";
+import { basename, resolve } from "node:path";
 import pkg from "../package.json";
 
-const baseURL = process.env.BASE_URL || "https://userscripts.mogeko.me";
-const releaseDir = path.resolve(__dirname, "../release");
-const releaseFiles = await glob("packages/*/dist/*.js", { ignore: "*/_*/**" });
+const baseURL = import.meta.env.BASE_URL || "https://userscripts.mogeko.me";
+const glob = new Bun.Glob("packages/!_*/dist/*.js");
+const releaseDir = resolve(import.meta.dir, "../release");
+const releaseFiles = [];
 
-await fs.mkdir(releaseDir, { recursive: true });
+await mkdir(releaseDir, { recursive: true });
 
-for (const file of releaseFiles) {
-  await fs.copyFile(file, path.resolve(releaseDir, path.basename(file)));
+for await (const file of glob.scan(".")) {
+  await copyFile(file, resolve(releaseDir, basename(file)));
+
+  releaseFiles.push([baseURL, basename(file)].join("/"));
 }
 
 const meta = {
@@ -19,19 +21,17 @@ const meta = {
   homepage: pkg.homepage,
   author: pkg.author,
   license: pkg.license,
-  resource: releaseFiles.map((file) => {
-    return [baseURL, path.basename(file)].join("/");
-  }),
+  resource: releaseFiles,
   packer: "https://www.npmjs.com/package/vite",
   env: {
-    NODE_VERSION: process.version,
-    RUNNER_OS: process.env.RUNNER_OS,
-    RUNNER_ARCH: process.env.RUNNER_ARCH,
+    BUN_VERSION: Bun.version,
+    RUNNER_OS: import.meta.env.RUNNER_OS,
+    RUNNER_ARCH: import.meta.env.RUNNER_ARCH,
   },
   date: new Date(Date.now()).toISOString(),
 };
 
-await fs.writeFile(
-  path.resolve(__dirname, "../release/index.json"),
+await Bun.write(
+  resolve(import.meta.dir, "../release/index.json"),
   JSON.stringify(meta, null, 2),
 );

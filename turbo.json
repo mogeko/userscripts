@@ -1,13 +1,10 @@
 {
-  "$schema": "https://turbo.build/schema.json",
+  "$schema": "https://turborepo.com/schema.json",
   "tasks": {
-    "build": {
-      "dependsOn": ["^build"],
-      "outputs": ["dist/**"],
-      "env": ["BASE_URL"]
-    },
+    "build": { "dependsOn": ["^build"], "outputs": ["dist"] },
+    "//#pkg": { "outputs": ["release"] },
     "test": { "dependsOn": ["^build"], "inputs": ["$TURBO_DEFAULT$", "tests"] },
     "cov": { "dependsOn": ["^build"], "inputs": ["$TURBO_DEFAULT$", "tests"] }
   },
-  "globalEnv": ["NODE_ENV", "GITHUB_TOKEN"]
+  "globalEnv": ["GITHUB_TOKEN", "BASE_URL"]
 }

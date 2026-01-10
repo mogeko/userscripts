@@ -112,3 +112,4 @@ release/
 
 # Vercel build output
 .vercel
+.env*.local

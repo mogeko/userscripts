@@ -25,18 +25,11 @@ jobs:
       VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
     steps:
       - uses: actions/checkout@v4.1.7
-      - name: Set up pnpm
-        uses: pnpm/action-setup@v4.0.0
-      - name: Set up Node.js
-        uses: actions/setup-node@v4.0.4
-        with:
-          node-version-file: package.json
-          cache: "pnpm"
-      - run: pnpm install --global vercel@latest
-      - run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
-      - run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+      - uses: oven-sh/setup-bun@v2.1.0
+      - run: bunx vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+      - run: bunx vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
       - run: |
-          vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }} | \
+          bunx vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }} | \
           xargs -I {} echo "DEPLOYMENT_URL={}" >> "${GITHUB_OUTPUT}"
         id: deployment
       - name: Create Version PR or Deploy to Pages
@@ -45,7 +38,6 @@ jobs:
         with:
           commit: "chore(release): version packages"
           title: "chore(release): version packages"
-          version: pnpm vite-node .github/changeset-version.ts
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_ENV: production

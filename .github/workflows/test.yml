@@ -14,13 +14,7 @@ jobs:
       TURBO_FORCE: true
     steps:
       - uses: actions/checkout@v4.1.7
-      - name: Set up pnpm
-        uses: pnpm/action-setup@v4.0.0
-      - name: Set up Node.js
-        uses: actions/setup-node@v4.0.4
-        with:
-          node-version-file: package.json
-          cache: "pnpm"
-      - run: pnpm install -rw --frozen-lockfile
-      - run: pnpm biome ci --reporter=github
-      - run: pnpm run cov
+      - uses: oven-sh/setup-bun@v2.1.0
+      - run: bun ci
+      - run: bun biome ci --reporter=github
+      - run: bun run cov

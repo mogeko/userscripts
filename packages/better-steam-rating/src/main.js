@@ -36,8 +36,8 @@ function checkFn() {
         gameDate.setMonth(dateArr[1] - 1);
         gameDate.setDate(dateArr[2]);
 
-        days = (new Date().getTime() - gameDate.getTime()) / 86400000;
-        days = Number.parseInt(days);
+        days = (Date.now() - gameDate.getTime()) / 86400000;
+        days = Number.parseInt(days, 10);
       }
     }
 
@@ -62,9 +62,9 @@ function checkFn() {
       return;
     }
 
-    const num = lastArr[0].replace(/\,/g, "");
+    const num = lastArr[0].replace(/,/g, "");
     const rate = lastArr[2].replace("%", "");
-    const realNum = Number.parseInt((num * rate) / 100);
+    const realNum = Number.parseInt((num * rate) / 100, 10);
 
     if (Number.isNaN(realNum)) {
       console.log(content);
@@ -80,6 +80,7 @@ function checkFn() {
 
     const innerHtml = `<span style="padding-left: 0.5em;width: 2em;display: inline-block;">${rate}</span><span style="width: 4.5em;display:inline-block;">${Number.parseInt(
       (num * rate) / 100,
+      10,
     )}</span><span style="width: 3em;display:inline-block;">${days}</span><span style="width:3em;display:inline-block;">${realRate}</span>`;
 
     item.innerHTML = innerHtml;

@@ -1,4 +1,4 @@
-const DV_TRAIT = /(\w+[\.\-\ \[\]])+DV[\.\-\ \[\]](\w+[\.\-\ \[\]]?)+/;
+const DV_TRAIT = /(\w+[.\- [\]])+DV[.\- [\]](\w+[.\- [\]]?)+/;
 
 for (const tr of document.querySelectorAll("table.lista2t tr.lista2")) {
   const link = tr.querySelector<HTMLAnchorElement>("td:nth-child(2) > a");

@@ -2,9 +2,7 @@
   "$schema": "https://turborepo.com/schema.json",
   "tasks": {
     "build": { "dependsOn": ["^build"], "outputs": ["dist"] },
-    "//#pkg": { "outputs": ["release"] },
-    "test": { "dependsOn": ["^build"], "inputs": ["$TURBO_DEFAULT$", "tests"] },
-    "cov": { "dependsOn": ["^build"], "inputs": ["$TURBO_DEFAULT$", "tests"] }
+    "//#pkg": { "outputs": ["release"] }
   },
   "globalEnv": ["GITHUB_TOKEN", "BASE_URL"]
 }

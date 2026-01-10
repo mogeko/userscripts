@@ -1,5 +1,19 @@
 # better-steam-rating
 
+## 0.2.7
+
+### Patch Changes
+
+- [#212](https://github.com/mogeko/userscripts/pull/212) [`a16f47f`](https://github.com/mogeko/userscripts/commit/a16f47f78d184834fd146ddd6284964c9cea65f9) Thanks [@dependabot](https://github.com/apps/dependabot)! - Some details optimized:
+
+  - `packages/better-steam-rating/src/main.js:39:17`
+    `Date.now()` is more readable and also avoids unnecessary instantiation of Date object.
+
+  - `packages/better-steam-rating/src/main.js:40:16`
+    `packages/better-steam-rating/src/main.js:67:21`
+    `packages/better-steam-rating/src/main.js:81:157`
+    Add a non-fractional number to 10.
+
 ## 0.2.6
 
 ### Patch Changes

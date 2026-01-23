@@ -24,8 +24,8 @@ jobs:
       VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
       VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
     steps:
-      - uses: actions/checkout@v6.0.1
-      - uses: oven-sh/setup-bun@v2.1.0
+      - uses: actions/checkout@v6.0.2
+      - uses: oven-sh/setup-bun@v2.1.2
       - run: bunx vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
       - run: bunx vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
       - run: |
@@ -34,7 +34,7 @@ jobs:
         id: deployment
       - name: Create Version PR or Deploy to Pages
         id: changesets
-        uses: changesets/action@v1.5.3
+        uses: changesets/action@v1.6.0
         with:
           commit: "chore(release): version packages"
           title: "chore(release): version packages"
